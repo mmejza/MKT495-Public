@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>MKT 495 Course Slides</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <button class="brand" id="open-library" aria-label="Open course library"><span class="brand-mark">M</span><span><strong>MKT 495</strong><small>Course slides</small></span></button>
+      <div class="deck-heading"><span id="module-label"></span><strong id="deck-title"></strong></div>
+      <div class="header-actions"><a class="text-button" id="download" hidden>Download PDF</a><button class="icon-button" id="fullscreen" aria-label="Enter fullscreen" title="Fullscreen (F)">↗</button></div>
+    </header>
+    <aside class="library" id="library">
+      <div class="library-title"><div><span>Fall 2026</span><h1>Course library</h1></div><button class="close" id="close-library" aria-label="Close library">×</button></div>
+      <nav id="deck-list" aria-label="Slide decks"></nav>
+      <div class="library-note"><span>Built for focus</span><p>Your place is saved automatically on this device.</p></div>
+    </aside>
+    <button class="scrim" id="scrim" aria-label="Close course library" hidden></button>
+    <section class="viewer" aria-label="Course slide viewer">
+      <div class="stage"><button class="stage-nav previous" id="previous-stage" aria-label="Previous slide">‹</button><figure><img id="current-slide" alt=""></figure><button class="stage-nav next" id="next-stage" aria-label="Next slide">›</button></div>
+      <div class="controls"><button id="previous">← <span>Previous</span></button><label><span class="sr-only">Slide progress</span><input id="progress" type="range" min="1" value="1"></label><span class="counter" id="counter"></span><button id="next"><span>Next</span> →</button></div>
+      <div class="filmstrip" id="filmstrip" aria-label="Slide thumbnails"></div>
+    </section>
+  </main>
+  <script src="catalog.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
