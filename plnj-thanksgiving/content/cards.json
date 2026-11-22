@@ -1,0 +1,360 @@
+{
+  "contentVersion": "1.0.0",
+  "schema": 1,
+  "scenarioBanner": "Simulation scenario: invented for this exercise. It is not part of the case.",
+  "eventHeadlines": {
+    "CUT": "Retail support softens after the cuts",
+    "CONS": "Offers draw redemptions, but shelves run short",
+    "TRADE": "Orders rise while reported shopper sales stay flat"
+  },
+  "events": {
+    "CUT": "After one cycle with 30% less promotion, two regional grocery buyers say there were fewer deals this time, and one has reduced L&N's shelf facings. Website engagement is below last year's. Your team cannot yet say whether the cause is the promotion cut, the media cut, or something else. One chain that did not change its facings reports normal sales.",
+    "CONS": "Consumer offers in the first two windows produced a redemption spike in several regions. Two chains report that promoted items ran short on shelf for days at a time. Social comments increasingly mention \"always on sale.\" Website data show most redeemers had bought L&N before.",
+    "TRADE": "About ten weeks into the plan, retailer orders for promoted items are up sharply and shelf talkers are in most of the stores your team has checked. Only two of ten chains share depletion data; unit sales at those two are flat. Web traffic is steady. Retailers set their own order quantities. Several have been ordering in the month before each trade window to catch the deal terms. Nothing shows that L&N asked any retailer to take more than it wanted."
+  },
+  "stressTests": {
+    "ST-O1-MEDIA": {
+      "title": "Stress test: Option 1 and \"cutting media costs little or no revenue.\"",
+      "paragraphs": [
+        "CASE FACT. Ham has no estimate of the revenue that paid and owned media produces. The $700,000 to $500,000 reduction comes from outsourcing and is L&N's own estimate.",
+        "CALCULATION. Option 1's $697,050 (7.24%) includes $200,000 of media savings. Without that saving, Option 1 would be $497,050 (5.16%). About $101,761 of media-related revenue loss, roughly 51 cents per dollar saved, brings Option 1 to 7%.",
+        "The evidence you have is limited: the case does not estimate the revenue earned by media."
+      ],
+      "whatChanges": "Evidence: the saving carries the whole result; action: keep, or switch; tradeoff: the highest margin rests on the least measured assumption."
+    },
+    "ST-O1-AVG": {
+      "title": "Stress test: Option 1 and \"past returns hold for the dollars we remove.\"",
+      "paragraphs": [
+        "CASE FACT. Ham's estimates give 3.65 of revenue per consumer promotion dollar and 4.65 per trade dollar in 2018 and 2019.",
+        "CALCULATION. At those averages, the $120,000 consumer cut loses $438,000 of revenue and $131,400 of contribution (a net profit effect of −$11,400 after the saving). The $90,000 trade cut loses $418,500 and $125,550 of contribution (net −$35,550). Together the promotion cuts alone lower profit by $46,950. All of Option 1's $153,050 gain comes from the media saving.",
+        "The stress test depends on whether the dollars removed performed below the historical average."
+      ],
+      "whatChanges": "Evidence: at average returns the promotion cuts do not pay for themselves; action: keep or switch; tradeoff: a cut is only profitable if the removed dollars were below-average dollars."
+    },
+    "ST-O1-PASS": {
+      "title": "Stress test: Option 1 and \"retailers keep supporting L&N.\"",
+      "paragraphs": [
+        "CASE FACT. L&N estimates that half of its accounts would stop carrying its products without trade promotions. In the distributor survey, 81% were satisfied with trade promotions.",
+        "CALCULATION. Option 1 cuts trade promotions by $90,000 (30%). The model loses $418,500 of revenue, in proportion to the cut, and assumes no account is lost beyond that.",
+        "The model assumes a proportional sales decline and no additional account losses."
+      ],
+      "whatChanges": "Evidence: the model has no account-loss effect; action: keep or switch; tradeoff: proportional loss is a best case for a cut."
+    },
+    "ST-O1-DEMAND": {
+      "title": "Stress test: Option 1 and \"promotions create new demand.\"",
+      "paragraphs": [
+        "CASE FACT. Ham built the incremental revenue estimates from historical sales records, expected organic growth, and monthly marketing spend. They are estimates, not experiments.",
+        "CALCULATION. If every dollar of the $856,500 is truly incremental, Option 1 gives up that much revenue. If some of it would have happened anyway, or was pulled forward from other months, the loss is smaller and Option 1 looks better. If the promotions also build awareness and trial that carry into later months, the loss is larger.",
+        "Ham's estimates are not experiments, so the amount of truly new demand is uncertain."
+      ],
+      "whatChanges": "Evidence: the size of the loss is uncertain in both directions; action: keep or switch; tradeoff: Option 1 benefits if the estimates are too high and is hurt if they are too low."
+    },
+    "ST-O2-MEDIA": {
+      "title": "Stress test: Option 2 and \"cutting media costs little or no revenue.\"",
+      "paragraphs": [
+        "CASE FACT. In the case's survey, 75% of meat-snack consumers recognized L&N when prompted. Ham has no estimate of what media earns, and media falls to $500,000.",
+        "CALCULATION. Option 2 moves the $200,000 saving into consumer promotions. Without the media saving, the same $200,000 would be new spending, and Option 2 would be $563,000 (5.02%). A media-related revenue loss only widens the gap to 7%.",
+        "The promotions depend on the very media support being reduced."
+      ],
+      "whatChanges": "Evidence: the promotions depend on the thing being cut; action: keep or switch; tradeoff: you take money from awareness to fund the offers that rely on it."
+    },
+    "ST-O2-AVG": {
+      "title": "Stress test: Option 2 and \"past returns hold for the dollars we add.\"",
+      "paragraphs": [
+        "CASE FACT. L&N's consumer ratio was 3.65 in 2018 and 2019. The case reports a typical industry ratio of 5:1 for consumer promotions.",
+        "SIMULATION SCENARIO. The historical estimate starts at $3.65 in incremental sales per consumer-promotion dollar. In this stress test, each added dollar returns $3.00 instead.",
+        "CALCULATION. At $3.00 per dollar, the $200,000 adds $600,000 in sales, $130,000 less than the projection. At a 30% gross margin, operating profit falls by $39,000 to $724,000 on $11,080,000 in sales: a 6.53% margin. Contribution ROMI on the added dollars is −10%."
+      ],
+      "whatChanges": "Evidence: the margin is the thinnest of the three; action: keep or switch; tradeoff: the largest growth in consumer reach carries the lowest return per dollar."
+    },
+    "ST-O2-PASS": {
+      "title": "Stress test: Option 2 and \"retailers have the product when shoppers want it.\"",
+      "paragraphs": [
+        "CASE FACT. KB Holdings handles reordering, restocking, and delivery. L&N says it cannot control how retail partners manage inventory. A consumer offer needs product on the shelf.",
+        "CALCULATION. Option 2 leaves trade promotions at $300,000 and adds $730,000 of revenue, which implies about 85.6% capacity.",
+        "No added trade support is included to ensure that product and displays are ready when offers run."
+      ],
+      "whatChanges": "Evidence: nothing in the budget adds shelf support; action: keep or switch; tradeoff: you add pull without adding push."
+    },
+    "ST-O2-DEMAND": {
+      "title": "Stress test: Option 2 and \"promotions create new demand.\"",
+      "paragraphs": [
+        "CASE FACT. L&N uses digital coupons and instant savings stickers to encourage trial among new customers, and its loyal customers re-share its contests.",
+        "CALCULATION. The $730,000 counts every redemption as new revenue. Spending $200,000 only breaks even on profit if it brings in at least $666,667 of truly new revenue ($200,000 ÷ 0.30).",
+        "Redemptions alone do not show whether a purchase was new or shifted from another time."
+      ],
+      "whatChanges": "Evidence: loyal buyers are among the likeliest to redeem; action: keep or switch; tradeoff: engagement is easy to see and incremental sales are hard to see."
+    },
+    "ST-O3-MEDIA": {
+      "title": "Stress test: Option 3 and \"cutting media costs little or no revenue.\"",
+      "paragraphs": [
+        "CASE FACT. Ham has no estimate of what media earns. Trade promotions secure shelf space, and consumers still need to want the product.",
+        "CALCULATION. Option 3's $823,000 (7.21%) includes the $200,000 media saving. Without it, Option 3 would be $623,000 (5.46%). About $105,652 of media-related revenue loss brings Option 3 to 7%.",
+        "The margin cushion is small relative to the uncertainty around the media estimate."
+      ],
+      "whatChanges": "Evidence: the cushion above 7% is $24,300; action: keep or switch; tradeoff: the highest profit depends on the same unmeasured cut as Option 1."
+    },
+    "ST-O3-AVG": {
+      "title": "Stress test: Option 3 and the trade-return estimate.",
+      "paragraphs": [
+        "CASE FACT. L&N's trade ratio was 4.65 in both years, against a typical industry ratio of 4:1.",
+        "SIMULATION SCENARIO. Option 3 starts at $11,410,000 in sales and $823,000 in operating profit. Sales come in $120,000 below forecast. Variable costs remain 70% of sales, other costs stay fixed, and Options 1 and 2 are unaffected."
+      ],
+      "whatChanges": "The check asks you to recompute the projection under a sales shortfall, then decide whether to keep or change your recommendation."
+    },
+    "ST-O3-PASS": {
+      "title": "Stress test: Option 3 and \"retailers sell through what they order.\"",
+      "paragraphs": [
+        "CASE FACT. L&N's trade promotions include discounts off invoice prices and free cases. L&N wants retailers to pass discounts along to shoppers, but it says it cannot control how partners manage inventory or stock the product (Exh. 4 and case text).",
+        "CALCULATION. Option 3's $930,000 of added revenue is $200,000 × 4.65, the historical average. That average is built from Ham's estimates of incremental revenue, which count retailer purchases that were sold to shoppers and may not separate them from stock that sits.",
+        "Retailer orders and shopper purchases are different measures; the case says L&N cannot control retail partners' inventory."
+      ],
+      "whatChanges": "Evidence: retailer orders are not the same as consumer sales; action: keep or switch; tradeoff: retailers may buy stock that does not reach shoppers."
+    },
+    "ST-O3-DEMAND": {
+      "title": "Stress test: Option 3 and \"promotions create new demand.\"",
+      "paragraphs": [
+        "CASE FACT. L&N's trade promotions include discounts off invoice prices, free cases, and minimum orders. L&N cannot control how partners manage their inventory.",
+        "CALCULATION. The $930,000 counts retailer purchases as revenue. If retailers buy ahead to catch a deal, revenue arrives earlier and is followed by a drop; the model has no such drop.",
+        "Orders may reflect purchases shifted earlier or inventory that has not yet reached shoppers."
+      ],
+      "whatChanges": "Evidence: orders are the easiest number to see; action: keep or switch; tradeoff: the most visible result is the one furthest from the shopper."
+    }
+  },
+  "option2Recovery": {
+    "title":"Option 2: what would close the 7% gap? These are calculations on the case's numbers, not forecasts.",
+    "lines":[
+      {"label":"Gap at projected sales","text":"Option 2 projects $763,000 of operating profit on $11,210,000 of revenue (6.81%). Seven percent of that revenue is $784,700. The gap is $21,700 of operating profit."},
+      {"label":"Reference point A","text":"Extra revenue above Option 2's projection: about $94,348 more revenue, with everything else unchanged, would bring Option 2 to exactly 7%. That is 12.9% more than the $730,000 it already projects. It is more than $21,700 ÷ 0.30 = $72,333 because extra sales also raise the revenue that 7% is measured against."},
+      {"label":"Reference point B","text":"Total incremental revenue above the case baseline: the same target expressed another way is $824,348 in total from the $200,000, or 4.12 per dollar. A $94,348 plus the modeled $730,000 equals B $824,348."},
+      {"label":"For comparison","text":"L&N's historical consumer ratio is 3.65; the case's industry-typical consumer ratio is 5:1, which would produce a 7.35% margin."},
+      {"label":"Another route","text":"About $21,700 of additional profit from somewhere else at the same revenue."},
+      {"label":"YOUR JUDGMENT","text":"Is that return plausible? What would make it more likely?"}
+    ]
+    },
+    "followUps": {
+      "X-AWARE": {
+        "headline":"Shopper demand fades between promotion windows",
+        "core":"The depletion data your team now has show promoted items selling in the launch months and drifting down {calendar}. Web and social engagement in those periods are below last year's. Paid and owned media is at the $500,000 level you took in Round 1.{media}",
+        "calendar":{"KEEP":"in the months when only trade deals run","ALIGN":"in the promotion-free months","OVERLAP":"even with offers running every month"},
+        "media":" Under your aligned calendar, each promotion-free month gets half the media of a launch month.",
+        "track":{"TRADE":"Retailers like the deals and have not asked for more; they have also not said what builds demand between windows.","CONS":"Your offers are landing on a brand that fewer shoppers are looking for.","CUT":"With promotions already cut, buyers note that nothing else is telling shoppers to look for L&N."},
+        "caseFact":"CASE FACT. In the case's survey, 75% of meat-snack consumers recognized L&N when prompted. YOUR JUDGMENT. Recognizing a brand when prompted is not the same as thinking of it while shopping.",
+        "fix":"If you act: add Awareness continuity to your priorities and put one of your current two on hold.",
+        "wait":"The launch-period lift may not carry into promotion-free months; another cycle could clarify whether demand is fading.",
+        "act":"Add Awareness continuity. If a priority is already funded, the response may instead change the message or calendar without dropping a priority.",
+        "whatChanges":"Evidence: depletion by period and engagement by period. Feasible action: add Awareness continuity (under ALIGN, a 60/40 allocation instead of two-thirds/one-third, so each promotion-free month gets two-thirds, not half, of a launch month's media). Tradeoff: it uses one of two priority slots, so something else goes unwatched."
+      },
+      "X-BRAND": {
+        "headline":"Shoppers increasingly describe the brand as always on sale",
+        "core":"Reviews, social comments, and two retailer notes describe L&N as \"always on sale.\" The share of units sold at a discount is rising {calendar}.{message}",
+        "calendar":{"KEEP":"across both the consumer and the trade months","ALIGN":"in the launch months, when offers are concentrated","OVERLAP":"in every month"},
+        "message":{"DEAL":" Price-led offers are the most visible thing L&N now says to shoppers.","MIX":" You meant price offers for trial and digital cohorts only, but shoppers outside those cohorts are seeing them."},
+        "track":{"CONS":"Offers are your whole bet in this plan, so what they say about the brand matters most.","CUT":"There are fewer promotions, but the ones that remain are the price-led ones.","TRADE":"Trade deals are reaching the shelf as price tags, not as a story about the brand."},
+        "caseFact":"CASE FACT. L&N has one of the highest prices per ounce among national brands, and its buyers are less price-sensitive than the average meat-snack buyer (16% vs. 39%, Exhibit 3). In 2019 jerky averaged $4.99 at retail against a $5.49 list price.",
+        "fix":"If you act: add Discount discipline to your priorities (a price-led message becomes mixed) and put one of your current two on hold.",
+        "wait":"Keep the current discounts for one more cycle and watch regular-price sales.",
+        "act":"Limit price offers to selected shoppers, prioritize Discount discipline, and put one current priority on hold.",
+        "actByVariant":{
+          "ACT-2":"Limit price offers to selected shoppers, prioritize Discount discipline, put one current priority on hold, and change the message from price-led to mixed.",
+          "ACT-4":"Limit price offers to selected trial cohorts and change the message to mixed; your Discount discipline priority stays in place."
+        },
+        "whatChanges":"Evidence: price realization and the language in reviews. Action: cap offer depth and frequency. Tradeoff: less short-term lift from offers in exchange for a clearer premium signal."
+      },
+      "X-TIME": {
+        "headline":"Promotion timing blurs the offer or misses store readiness",
+        "coreByCalendar":{
+          "OVERLAP":"Offers have run every month for several cycles. Retail buyers say the promotions blur together, a few have stopped featuring the trade deal, and your team cannot tell which month's activity produced which sales. Each type is running at half its earlier monthly intensity.",
+          "ALIGN":"Two of your co-timed launches reached stores that were not yet set. The offer was live for shoppers while shelf talkers and stock were missing."
+        },
+        "track":{"TRADE":"Trade deals depend on retailers being ready, and buyers say the new timing gave them less notice.","CONS":"Consumer offers are most exposed when stores are not set.","CUT":"With fewer events, each miss is more visible."},
+        "caseFact":"CASE FACT. L&N's trade promotions include performance discounts tied to verifiable merchandising support, and L&N said that retailers called its current timing, duration, and frequency effective.",
+        "fix":"If you act: add Retail execution to your priorities and put one of your current two on hold. An overlapping calendar becomes aligned.",
+        "wait":"Retailers may keep seeing overlapping deals or launches that are not ready when the offer begins.",
+        "act":"Add Retail execution and, if the calendar overlaps every month, move it to aligned launches.",
+        "actByVariant":{
+          "ACT-3":"Add Retail execution, put one current priority on hold, and change the calendar from overlap to aligned launches.",
+          "ACT-5":"Change the calendar from overlap to aligned launches; your Retail execution priority stays in place."
+        },
+        "whatChanges":"Evidence: launch-day store readiness, or buyers' reports of fatigue. Action: gate each launch on verified readiness, or move off always-on promotion. Tradeoff: a gate slows launches; leaving always-on promotion gives up continuous presence."
+      },
+      "X-EXEC": {
+        "headline":"Displays or product are missing when offers go live",
+        "core":"Your team's store checks and KB Holdings restocking reports show a visible share of stores where shelf talkers are missing or promoted items are short on shelf during promotions. {calendar}",
+        "calendar":{"KEEP":"The gaps appear in both consumer and trade months.","ALIGN":"The gaps are concentrated in the launch months, when both offers are live.","OVERLAP":"The gaps are spread across the year."},
+        "track":{"CONS":"Your offers are creating demand that some stores cannot serve.","TRADE":"Retailers took the deal, but not all of them carried out the support it paid for.","CUT":"With fewer deals in place, the stores that did not set up cost the brand more."},
+        "caseFact":"CASE FACT. L&N's trade promotions include shelf talkers and performance discounts for verifiable merchandising support, and L&N cannot control how partners manage inventory or stock the product.",
+        "fix":"If you act: add Retail execution to your priorities and put one of your current two on hold.",
+        "wait":"Some shoppers may continue to find offers without the display or stock needed to complete a purchase.",
+        "act":"Add Retail execution and put one of your two current priorities aside, unless it is already funded.",
+        "whatChanges":"Evidence: store checks by chain. Action: tie incentives to verified merchandising. Tradeoff: field time goes to stores and away from whatever you dropped."
+      },
+      "X-FLOW": {
+        "headline":"Retailer orders run ahead of shopper purchases",
+        "core":"Your team sees retailer orders every week but has depletion data for only two of ten chains. Orders arrive in a surge {calendar} and then drop. Two retailers have asked for the next trade deal early.",
+        "calendar":{"KEEP":"in the month before each odd-month trade window.","ALIGN":"in the promotion-free month before each launch.","OVERLAP":"in a repeating monthly pattern."},
+        "track":{"TRADE":"Nobody can say whether the product is leaving shelves.","CONS":"Offers are running, and your team cannot tell redeemed units from restocked ones.","CUT":"You cut promotions without a clear read on what shoppers did next."},
+        "caseFact":"CASE FACT. L&N says it cannot control how retail partners manage inventory. KB Holdings handles reordering, restocking, and delivery.",
+        "fix":"If you act: add Sell-through visibility to your priorities and put one of your current two on hold.",
+        "wait":"Orders may rise before shoppers buy the product, leaving the team unsure whether stock is accumulating.",
+        "act":"Add Sell-through visibility and put one of your two current priorities aside, unless it is already funded.",
+        "whatChanges":"Evidence: weekly orders against monthly depletions. Action: pull depletion and reorder data. Tradeoff: analysis time and retailer cooperation, taken from another priority."
+      },
+      "X0": {
+        "prompt":"Early results are in and nothing is flagged. Your team has been told to assume the plan fails by year-end. Which link do you think is most likely to have broken?",
+        "choices":[
+          {"id":"AWARE","label":"Awareness","panel":"Even with a media floor, $500,000 is $200,000 below the original plan. If awareness slips, the first sign will be engagement outside the launch periods."},
+          {"id":"BRAND","label":"Message","panel":"Premium-only offers protect the brand but give price-sensitive shoppers little reason to try. If trial stalls, look here."},
+          {"id":"TIME","label":"Timing","panel":"KEEP: your calendar avoids collisions but never ties offers to media. ALIGN: your promotion-free months carry thinner media (two-thirds of a launch month's media)."},
+          {"id":"EXEC","label":"Execution","panel":"You are verifying stores, but a three-person team cannot check them all."},
+          {"id":"FLOW","label":"Sell-through","panel":"You are watching depletion data, which is slower and covers only the chains that share it. Orders may move before you see shoppers."}
+        ],
+        "result":"Recorded. Nothing branches from this answer. Every choice in your plan has a cost, and these are the ones you chose to carry.",
+        "whatChanges":"Evidence: none new. Action: none; this card is a reflection. Tradeoff: the student states where their strong plan is most fragile."
+      }
+    },
+    "complications": {
+      "context":{
+        "ESCALATED":"Your team flagged this earlier, and it has not gone away.",
+        "CARRIED":"This was on your open list when you chose to act on a different problem.",
+        "OPENED":"This gap opened when you put {droppedPriority} on hold to address the earlier problem.",
+        "X0":"Nothing was flagged in Round 2.",
+        "RESOLVED":"You acted on the flag in Round 2, and the gap it showed has closed."
+      },
+      "C3-AWARE":{
+        "headline":"Sales sag in the months between promotions",
+        "core":"Retailer reports show sales of promoted items rising in launch periods and sagging {calendar}. One buyer asks what is building demand between events. Engagement for a competing premium brand is rising in the same periods.{media}",
+        "calendar":{"KEEP":"in the months when only trade deals run","ALIGN":"in the promotion-free months","OVERLAP":"even though offers never stop"},
+        "media":" Each promotion-free month gets half the media of a launch month.",
+        "track":{"TRADE":"Retailers are happy with the deals, but a deal does not bring shoppers into the store.","CONS":"Your offers do their job in launch periods, and little else is working for the brand in between.","CUT":"With less promotion, the periods between events are quieter than they used to be."},
+        "caseFact":"CASE FACT. L&N's paid and owned media falls to $500,000, and Ham has no estimate of what media earns."
+      },
+      "C3-FLOW":{
+        "headline":"More chains report inventory ahead of sales",
+        "core":"More depletion data arrive from additional chains. In several of them, retailer inventory of promoted items is higher than recent sales justify: orders ran ahead of depletions for eight weeks. The next promotion window is three weeks away.",
+        "track":{"TRADE":"Retailers chose the quantities, drawn by terms that reward ordering ahead of each window; nothing shows that L&N pushed volume.","CONS":"Retailers stocked up for your offers. Redemptions are real, but sales are not keeping pace with the stock.","CUT":"Retailers ordered ahead of the smaller deal schedule, so the stock they hold reflects the old pace, not the new one."},
+        "caseFact":"CASE FACT. L&N says it cannot control how retail partners manage inventory."
+      },
+      "C3-EXEC":{
+        "headline":"Offers are live before stores are ready",
+        "core":"Store checks show a visible share of stores where offers are live but shelf talkers are missing or promoted items are short on shelf. Shoppers who come for the offer leave without the product. KB Holdings restocking reports show stock-outs clustered in the promotion periods. The gaps appear {calendar}.",
+        "calendar":{"KEEP":"in both consumer and trade months.","ALIGN":"in the launch months, when consumer and trade offers coincide.","OVERLAP":"throughout the year."},
+        "track":{"CONS":"Your offers are creating demand that stores cannot serve.","TRADE":"Retailers took the trade deal, but part of the support it paid for was not carried out.","CUT":"With fewer deals in place, each uneven launch costs more."},
+        "caseFact":"CASE FACT. L&N's trade promotions include performance discounts tied to verifiable merchandising support."
+      },
+      "C3-TIME":{
+        "headline":"Retailers question the promotion schedule",
+        "coreByCalendar":{
+          "OVERLAP":"Retail buyers say always-on deals have become the expected price. Two have asked L&N to stop one of the two promotion types in the busiest months. Your team still cannot tell which activity produced which sales.",
+          "ALIGN":"At two launches, stores were not ready for the offer. A retailer now wants to run its own promotion in one of your launch months, and your team has no way to confirm that its stores are set."
+        },
+        "track":{"CONS":"Your offers lose their effect when stores are not set.","TRADE":"Trade partners are reacting to the schedule, not to the brand.","CUT":"With fewer events, a collision or a miss is more visible."},
+        "caseFact":"CASE FACT. The case describes L&N alternating consumer and trade promotions by month, and its trade partners called that timing effective."
+      },
+      "C3-BRAND":{
+        "headline":"Price-led offers weaken the premium signal",
+        "core":"Shoppers' comments and a competitor's premium line both point the same way: L&N looks like \"always on sale.\" The price L&N actually realizes keeps drifting below list. A retailer's buyer asks whether L&N will keep supporting a premium price. The pattern appears {calendar}.{message}",
+        "calendar":{"KEEP":"in both consumer and trade months.","ALIGN":"most strongly in the launch months.","OVERLAP":"in every month."},
+        "message":{"DEAL":" Price-led offers are the main thing shoppers see.","MIX":" Price offers meant for trial cohorts are reaching shoppers outside them."},
+        "track":{"CONS":"Offers are your plan's main tool, so they set the brand's price image.","TRADE":"Trade deals show up in stores as lower prices.","CUT":"The fewer promotions you run are mostly price-led."},
+        "caseFact":"CASE FACT. In 2019 L&N jerky averaged $4.99 at retail against a $5.49 list price, and L&N's buyers are less price-sensitive than the average meat-snack buyer (16% vs. 39%, Exhibit 3)."
+      },
+      "C3-HOLD":{
+        "headline":"Early results are steady; the team considers its next move",
+        "core":"Early reads are on plan. Retail buyers report steady sell-through, awareness is holding, and offers are not drawing \"always on sale\" comments. Your team asks whether to push harder or hold.",
+        "track":{"TRADE":"Retailers ask for more deal support.","CONS":"Redemptions are strong, and the team wants a bigger offer at the next window.","CUT":"Leadership asks whether the reduction should go further."},
+        "caseFact":"CASE FACT. Ryan said he does not want to invest more in both consumer and trade promotions because it would split the team's focus."
+      }
+    },
+    "r31Responses":{
+      "C3-AWARE":[
+        {"id":"R3.1-C3-AWARE-a","label":"Move media weight into the quiet months.","assumes":"Between-event demand matters more than launch strength.","risks":"Weaker launch windows, where the offers and the shelf support are.","watch":"Whether the quiet-period sag shrinks without hurting launches.","impliesChange":true},
+        {"id":"R3.1-C3-AWARE-b","label":"Fund an off-cycle consumer event.","assumes":"A consumer offer in a quiet month can fill the gap.","risks":"Adds consumer promotion to a trade-led plan and splits the team's focus; the profit effect is not modeled.","watch":"Redeemers: new buyers or regulars.","impliesChange":true},
+        {"id":"R3.1-C3-AWARE-c","label":"Hold course and gather another cycle of data.","assumes":"The sag is real but small, and a cycle will clarify it.","risks":"A competitor keeps gaining in the meantime.","watch":"Quiet-period depletion and engagement.","impliesChange":false}
+      ],
+      "C3-FLOW":[
+        {"id":"R3.1-C3-FLOW-a","label":"Pause or resize the next trade event until depletion data arrive.","assumes":"Retailers hold more than they sell, and more deal will add stock.","risks":"A buyer reads this as less support; shelf space may be at risk.","watch":"Buyer reaction and depletions at the pause.","impliesChange":true},
+        {"id":"R3.1-C3-FLOW-b","label":"Keep the event but tie the incentive to verified depletion and merchandising.","assumes":"Retailers will accept terms that follow sales.","risks":"Needs data from retailers who may not share it.","watch":"Which chains agree and which do not.","impliesChange":true},
+        {"id":"R3.1-C3-FLOW-c","label":"Proceed as planned and watch orders weekly.","assumes":"The surge is timing, and sales will catch up.","risks":"Adds stock the retailer may later discount or sell down.","watch":"The size of the next surge and drop.","impliesChange":false}
+      ],
+      "C3-EXEC":[
+        {"id":"R3.1-C3-EXEC-a","label":"Delay launches in stores that are not set.","assumes":"Reliability matters more than reach.","risks":"Slower launches and some lost demand.","watch":"Share of stores ready on launch day.","impliesChange":true},
+        {"id":"R3.1-C3-EXEC-b","label":"Shift incentives toward verified merchandising.","assumes":"Retailers respond to performance-linked terms.","risks":"Verification takes field time.","watch":"Compliance by chain.","impliesChange":true},
+        {"id":"R3.1-C3-EXEC-c","label":"Launch as planned and accept uneven coverage.","assumes":"Most demand still reaches stocked stores.","risks":"Shoppers who miss the product may not return.","watch":"Stock-outs during the next window.","impliesChange":false}
+      ],
+      "C3-TIME":[
+        {"id":"R3.1-C3-TIME-a","label":"Drop one promotion type in the busiest months.","assumes":"Clarity beats continuous presence.","risks":"Fewer touchpoints and an upset retailer.","watch":"Whether buyers can tell what worked.","impliesChange":true},
+        {"id":"R3.1-C3-TIME-b","label":"Add retailer readiness gates before launches.","assumes":"Retailers will confirm readiness in advance.","risks":"Launches slow down.","watch":"Launch-day readiness.","impliesChange":true},
+        {"id":"R3.1-C3-TIME-c","label":"Keep the calendar as it is.","assumes":"The problem is temporary.","risks":"The fatigue or misses repeat.","watch":"The next buyer meeting.","impliesChange":false}
+      ],
+      "C3-BRAND":[
+        {"id":"R3.1-C3-BRAND-a","label":"Replace price offers with value-added or cause-based offers.","assumes":"Shoppers respond to more than price.","risks":"Slower trial among price-sensitive shoppers.","watch":"Trial and redemption mix.","impliesChange":true},
+        {"id":"R3.1-C3-BRAND-b","label":"Limit price offers to trial cohorts.","assumes":"The cohorts can be kept separate.","risks":"Leakage and complexity for a three-person team.","watch":"Who sees the offers.","impliesChange":true},
+        {"id":"R3.1-C3-BRAND-c","label":"Keep the offers and reinforce the premium message in media.","assumes":"Media can outweigh the price signal.","risks":"Media is already at $500,000.","watch":"Price realization.","impliesChange":true}
+      ],
+      "C3-HOLD":[
+        {"id":"R3.1-C3-HOLD-a","label":"Scale up what is working at the next window.","assumes":"Early results will keep up at a larger size.","risks":"Drift toward heavier discounts and lower per-dollar return.","watch":"Return per added dollar.","impliesChange":true},
+        {"id":"R3.1-C3-HOLD-b","label":"Hold the plan and the discipline.","assumes":"A stable plan will keep paying.","risks":"A growth window may pass.","watch":"Competitor moves.","impliesChange":false},
+        {"id":"R3.1-C3-HOLD-c","label":"Use the stable period for a controlled test.","assumes":"A small test will teach something useful.","risks":"Delays a decision.","watch":"What the test can and cannot show.","impliesChange":true}
+      ]
+    },
+    "actions":{
+      "ACT-1":{
+        "dropPrompt":"To add {fixPriority} you must put one current priority on hold. Which?",
+        "confirmationTitle":"You are changing your commitments.",
+        "confirmation":"Add {fixPriority}. Put {droppedPriority} on hold: it gets no attention for the rest of the period.",
+        "result":"You added {fixPriority} and put {droppedPriority} on hold."
+      },
+      "ACT-2":{
+        "dropPrompt":"To add {fixPriority} you must put one current priority on hold. Which?",
+        "confirmationTitle":"You are changing your commitments.",
+        "confirmation":"Add Discount discipline. Put {droppedPriority} on hold: it gets no attention for the rest of the period. Your message changes from price-led to mixed: price offers go only to trial and digital cohorts.",
+        "result":"You added Discount discipline, changed your message from price-led to mixed, and put {droppedPriority} on hold."
+      },
+      "ACT-3":{
+        "dropPrompt":"To add {fixPriority} you must put one current priority on hold. Which?",
+        "confirmationTitle":"You are changing your commitments.",
+        "confirmation":"Add Retail execution. Put {droppedPriority} on hold: it gets no attention for the rest of the period. Your calendar changes from overlap to aligned from the next window: consumer and trade promotions run together in the six even months, with a media burst.",
+        "result":"You added Retail execution, changed your calendar from overlap to aligned, and put {droppedPriority} on hold."
+      },
+      "ACT-4":{
+        "confirmationTitle":"You are changing your message.",
+        "confirmation":"Your message changes from price-led to mixed: price offers go only to trial and digital cohorts. Your priorities do not change.",
+        "result":"You changed your message from price-led to mixed. Your priorities did not change."
+      },
+      "ACT-5":{
+        "confirmationTitle":"You are changing your calendar.",
+        "confirmation":"Your calendar changes from overlap to aligned from the next window: consumer and trade promotions run together in the six even months, with a media burst. Each launch will need store readiness verified, which your Retail execution priority already covers. Your priorities do not change.",
+        "result":"You changed your calendar from overlap to aligned. Your priorities did not change."
+      },
+      "watchResult":"You chose to hold course on {X label}. It stays on your open list."
+    },
+    "alsoOpenLines":{
+      "AWARE":"Awareness: media presence between promotions is not being protected.",
+      "BRAND":"Message: offers may read as discounts on a premium brand.",
+      "TIME":{
+        "OVERLAP":"Timing: promotions run all year, so none stands out.",
+        "ALIGN":"Timing: launches are co-timed, but nobody is verifying that stores are ready."
+      },
+      "EXEC":"Execution: nobody is verifying shelf talkers, displays, or stock in stores.",
+      "FLOW":"Visibility: your team cannot see what shoppers buy, only what retailers order."
+    },
+    "debrief":{
+      "takeaways":{
+        "C3-AWARE":"Your path shows why launch-period results and demand between promotions need to be considered together.",
+        "C3-FLOW":"Your path shows that retailer orders can rise while inventory builds if shopper purchases lag deliveries.",
+        "C3-EXEC":"Your path shows that offers, displays, and available stock need to be ready together at the store.",
+        "C3-TIME":"Your path shows that promotion timing affects both store readiness and what shoppers see.",
+        "C3-BRAND":"Your path shows that price-led offers can affect a premium brand's price signal as well as redemptions.",
+        "C3-HOLD":"Your path shows that steady early results do not remove uncertainty about the next promotion."
+      },
+      "linkLines":{
+        "AWARE":{"protected":"You protected media presence between promotions. The cost: a priority slot and, under an aligned calendar, a gentler media burst.","open":"Media presence between promotions was not protected. Under an aligned calendar, each promotion-free month got half the media of a launch month."},
+        "BRAND":{"protected":"Your offers fit a premium positioning (premium, or mixed with discipline). The cost: slower trial among price-sensitive shoppers.","open":"Your offers read as discounts on a premium brand. The case notes L&N's high price per ounce and less price-sensitive buyers."},
+        "TIME":{"protected":"Your calendar avoided collisions, or your co-timed launches were gated on store readiness. The cost: fewer touchpoints, or slower launches.","open":"Your calendar ran promotions all year, or launched in stores that were not ready."},
+        "EXEC":{"protected":"You verified shelf talkers, displays, and stock. The cost: field time.","open":"Nobody verified stores, and offers went live in stores that were not set."},
+        "FLOW":{"protected":"You could see depletions, not only orders. The cost: analysis time and retailer cooperation.","open":"You could see what retailers ordered but not what shoppers bought."}
+      },
+      "closing":"No option was the best choice on every measure. A promotion's return depends on the awareness before it and the shelf behind it. Messages from media, offers, and retailers either reinforce or contradict one another. Timing is part of integration, not only spending. A channel's return is better read at the system level. When retailer orders run ahead of consumer sales, the first question is where the extra stock is sitting and why; \"channel stuffing\" is the label for the case where a supplier's own incentives cause shipments beyond what the channel can sell. This exercise did not claim that."
+  }
+}

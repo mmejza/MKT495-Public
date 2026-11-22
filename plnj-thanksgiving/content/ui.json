@@ -1,0 +1,854 @@
+{
+  "contentVersion": "1.0.0",
+  "schema": 1,
+  "appVersion": "1.0.0",
+  "intro": {
+    "title": "PLNJ Simulation",
+    "body": [
+      "You are advising Kathy Ayers, L&N's VP of Marketing and Communications. Plan for about an hour, in addition to reading the case and completing the Canvas steps. You can consult the case at any time.",
+      "Round 1 uses the case's numbers. Round 2 and Round 3 include clearly labeled simulation scenarios created for this exercise; those scenarios are not case facts.",
+      "The activity does not collect your name, ID, or email. Your decisions and written defense stay in this browser profile on this device."
+    ],
+    "begin": "Begin",
+    "resume": "Resume",
+    "workflowTitle": "How to complete the activity",
+    "workflow": [
+      "Work through three rounds and make your own managerial decisions.",
+      "In Rounds 1 and 2, pass both evidence questions to continue. You can retry missed questions as often as needed. Your managerial choices and final defense are unscored.",
+      "If you need to stop, reopen the app from Canvas on the same device and browser profile to resume. Start over clears the saved run.",
+      "At the end, copy your completion receipt. Return to Canvas, pass the Evidence Check, and submit the Participation Attestation with your receipt. Canvas handles participation credit."
+    ]
+  },
+  "labels": {
+    "CASE FACT": "CASE FACT",
+    "CALCULATION": "CALCULATION",
+    "ASSUMPTION": "ASSUMPTION",
+    "SIMULATION SCENARIO": "SIMULATION SCENARIO",
+    "YOUR JUDGMENT": "YOUR JUDGMENT"
+  },
+  "roundLabels": [
+    "Round 1 · Set the direction",
+    "Round 2 · Repair the integrated plan",
+    "Round 3 · Reconsider and defend"
+  ],
+  "ledger": {
+    "title": "The three budget options",
+    "leadIn": [
+      "Compare the three budget options on projected sales, operating profit, and operating margin. The 7% figure is headquarters' target, not a rule.",
+      "The table is a full-year projection. Consumer and trade promotions are treated as independent, and the media reduction is assumed to cost no revenue.",
+      "Open the details for spending, calculations, and assumptions. Those projections remain unchanged throughout the simulation."
+    ],
+    "caseFacts": [
+      "2020 forecast: revenue $10,480,000; variable costs $7,336,000; gross profit $3,144,000; wages $920,000; G&A $280,000; marketing $1,400,000; operating profit $544,000 (5.19%).",
+      "Headquarters' 7% figure is a target.",
+      "2020 marketing: paid and owned media $700,000, consumer $400,000, trade $300,000. Media can fall to $500,000 by outsourcing.",
+      "Ham's 2018 and 2019 figures are estimates, not observed experiments; no estimate is available for media.",
+      "Typical industry revenue-to-cost ratios: 5:1 consumer and 4:1 trade. The plan assumes about 80% capacity. KB Holdings handles reordering, restocking, and delivery."
+    ],
+    "calculations": [
+      "Calculation inputs: 2020 revenue was $10,480,000; variable costs were $7,336,000 (70%); gross profit was $3,144,000; wages were $920,000; and G&A was $280,000.",
+      "Ham's 2018–2019 sales estimates imply historical average revenue per promotion dollar of 3.65 consumer and 4.65 trade. They are estimates, not observed experiments.",
+      "Contribution ROMI = (incremental revenue × 30% − spend) ÷ spend. Consumer: +9.5%; trade: +39.5%; break-even revenue ratio: 3.33.",
+      "At industry-typical ratios, the same calculation gives consumer 5:1 → +50% and trade 4:1 → +20%. L&N's consumer ratio is below the industry norm and its trade ratio is above.",
+      "The case provides no revenue estimate for paid and owned media. The model reduces media from $700,000 to $500,000 and assumes no sales are lost."
+    ],
+    "assumptions": [
+      "Zero revenue loss from the media reduction in all three options. The case says Ham has no media incremental-revenue estimate.",
+      "Historical average returns apply to the new or removed promotion dollars (3.65 and 4.65), as if returns were constant at the margin.",
+      "Ham's figures are estimates from sales records, expected organic growth, and monthly spend, not observed experiments.",
+      "Variable costs stay at 70%; wages ($920K) and G&A ($280K) stay fixed, including at Option 3's implied 87% capacity.",
+      "The three levers are independent: consumer and trade revenue are added separately with no interaction. Rounds 2–3 test this.",
+      "No promotion calendar change is modeled in Round 1."
+    ],
+    "columns": [
+      "Baseline",
+      "Option 1: Reduce promos 30%",
+      "Option 2: +$200K consumer",
+      "Option 3: +$200K trade"
+    ],
+    "summaryRows": [
+      {"label":"Projected revenue","values":["$10,480,000","$9,623,500","$11,210,000","$11,410,000"]},
+      {"label":"Operating profit","values":["$544,000","$697,050","$763,000","$823,000"]},
+      {"label":"Operating margin","values":["5.19%","7.24%","6.81%","7.21%"]},
+      {"label":"Total marketing","values":["$1,400,000","$990,000","$1,400,000","$1,400,000"]}
+    ],
+    "rows": [
+      {
+        "label": "Paid and owned media",
+        "values": [
+          "$700,000",
+          "$500,000 (−$200,000)",
+          "$500,000 (−$200,000)",
+          "$500,000 (−$200,000)"
+        ]
+      },
+      {
+        "label": "Consumer promotions",
+        "values": [
+          "$400,000",
+          "$280,000 (−$120,000)",
+          "$600,000 (+$200,000)",
+          "$400,000"
+        ]
+      },
+      {
+        "label": "Trade promotions",
+        "values": [
+          "$300,000",
+          "$210,000 (−$90,000)",
+          "$300,000",
+          "$500,000 (+$200,000)"
+        ]
+      },
+      {
+        "label": "Total marketing",
+        "values": [
+          "$1,400,000",
+          "$990,000 (−$410,000)",
+          "$1,400,000",
+          "$1,400,000"
+        ]
+      },
+      {
+        "label": "Change in revenue from promotions",
+        "values": [
+          "n/a",
+          "−$856,500 (−$438,000 consumer; −$418,500 trade)",
+          "+ $730,000",
+          "+ $930,000"
+        ]
+      },
+      {
+        "label": "Projected revenue",
+        "values": [
+          "$10,480,000",
+          "$9,623,500",
+          "$11,210,000",
+          "$11,410,000"
+        ]
+      },
+      {
+        "label": "Operating profit",
+        "values": [
+          "$544,000",
+          "$697,050",
+          "$763,000",
+          "$823,000"
+        ]
+      },
+      {
+        "label": "Operating margin",
+        "values": [
+          "5.19%",
+          "7.24%",
+          "6.81%",
+          "7.21%"
+        ]
+      },
+      {
+        "label": "Profit needed for exactly 7% at that revenue",
+        "values": [
+          "$733,600",
+          "$673,645",
+          "$784,700",
+          "$798,700"
+        ]
+      },
+      {
+        "label": "Profit above / (below) the 7% line",
+        "values": [
+          "($189,600)",
+          "+ $23,405",
+          "($21,700)",
+          "+ $24,300"
+        ]
+      },
+      {
+        "label": "Implied capacity",
+        "values": [
+          "80.0%",
+          "73.5%",
+          "85.6%",
+          "87.1%"
+        ]
+      }
+    ],
+    "note": "Option 1 savings: $200,000 paid and owned media + $120,000 consumer + $90,000 trade = $410,000. Cutting promotions alone, without the media cut, gives $497,050 (5.16%). The ledger is the Original projection and is never re-forecast."
+  },
+  "navigation": {
+    "continue": "Continue",
+    "back": "Back",
+    "lockR1": "Lock Round 1 and continue",
+    "lockR2": "Lock Round 2 and continue",
+    "confirm": "Confirm",
+    "goBack": "Go back",
+    "round1LockTitle": "Round 1 is about to lock.",
+    "round2LockTitle": "Round 2 is about to lock.",
+    "progress": "Progress",
+    "decisions": "My decisions so far",
+    "startOver": "Start over"
+  },
+  "lock": {
+    "r1": "Your first recommendation: {initialRec}. Confirmed: {confirmedRec}. Lens: {lens}. After you continue you cannot change these; you will see them again in Round 3.",
+    "r2": "Your commitments: priorities {P}; calendar {cal}; message {msg}; evidence {ev}; response to the flag: {response}.",
+    "nothingElse": "Nothing else is open."
+  },
+  "round3": {
+    "considered": "Considered in the previous step (not authorized): {label}.",
+    "whyOne": "You can authorize one adjustment for the rest of the period: retain your plan, refine one execution lever, or redirect the remaining budget. You cannot do two. Your team has three people, and Ryan has said he does not want to split the team's focus. One change at a time also lets you see what moved the results.",
+    "commitments": "These are already committed and cannot change: your first recommendation ({initialRec}) and confirmed recommendation ({confirmedRec}); your lens ({lens}); the priorities you set ({P}); the calendar you ran ({cal}); the message you used ({msg}); the evidence you watched ({ev}); your response to the Round 2 flag ({response}). The response you considered in the previous step is not listed here: it is not a commitment.",
+    "confirmRevisionTitle": "This changes your budget direction for the remaining period.",
+    "confirmRevision": "Money and months already spent are not recovered. The Original projection is not re-forecast.",
+    "resultRetain": {
+      "assumes": "the plan, including its gaps, keeps working.",
+      "risks": "whatever is on your open list.",
+      "watch": "the measure you chose in Round 2."
+    },
+    "resultRefine": {
+      "assumes": "that one lever is the constraint that matters most.",
+      "risks": "that the other levers stay as they are.",
+      "watch": "the metric tied to the lever you changed."
+    },
+    "resultRevise": {
+      "assumes": "the new direction fits the evidence better than the old one.",
+      "risks": "that spending moved midyear does not recover past support, and that trade timing changes only at the next trade window.",
+      "watch": "what the Original projection assumed about the new option."
+    },
+    "retainSentence": "No change is authorized. The response you considered, \"{label},\" will not happen.",
+    "refineSentence": "Only the change you authorized takes effect: your {lever}. The response you considered, \"{label},\" is not authorized.",
+    "reviseSentence": "Only the change you authorized takes effect: the remaining budget moves to {option}. The response you considered, \"{label},\" is not authorized.",
+    "noChangeSentence": "You considered holding course (\"{label}\"). You authorized: {action}.",
+    "resultLine": "Considered: {label}. Not yet authorized.",
+    "originalProjectionTitle": "Review the Round 1 projections",
+    "refineCalendar": "Changing your calendar takes effect at the next window and applies to the remaining uncommitted media only. A change away from ALIGN returns that media to equal weights; a change to ALIGN shifts it toward the six anchor months from the next window.",
+    "refineMessage": "Offers already seen by shoppers are not recalled.",
+    "refinePriorities": "The two you do not choose get no attention for the rest of the period. If you are on an aligned calendar, adding or dropping Awareness continuity changes how the remaining uncommitted media is weighted."
+  },
+  "defense": {
+    "prompt": "How do one case fact or calculation and one development from your path support your final decision? Explain the tradeoff you accept. (up to 150 words)",
+    "caseFactLabel": "Case fact or calculation",
+    "developmentLabel": "Development from your path",
+    "textLabel": "Your defense",
+    "starterPrompts": [],
+    "wordCount": "{count} of 150 words",
+    "submit": "Submit and finish",
+    "submitConfirmation": "You cannot edit your defense after submitting."
+  },
+  "receipt": {
+    "title": "Completion Receipt",
+    "note": "Your choices stay on this device. The app does not send this receipt to Canvas.",
+    "attestation": "I completed the PLNJ simulation myself",
+    "copy": "Copy receipt",
+    "copyFallback": "Clipboard access was unavailable. The receipt is selected below so you can copy it manually.",
+    "copied": "Receipt copied.",
+    "download": "Download my decision record",
+    "downloadNote": "This text file is for your records; it is not part of your Canvas submission."
+  },
+  "storage": {
+    "unavailable": "Your progress cannot be saved in this window. If you reload, you will start over.",
+    "otherTab": "This activity is open in another tab. Close one to avoid overwriting.",
+    "restored": "Progress restored. Round {round}, decision {decision} of {total}.",
+    "invalid": "We could not restore your saved work.",
+    "clearFailed": "The saved run could not be cleared from this browser profile. Your existing saved work remains in place.",
+    "startOverPrompt": "Type \"start over\" to clear the saved run on this browser profile.",
+    "saved": "Your answers are saved on this device. Clearing browser data clears progress."
+  },
+  "errors": {
+    "title": "Activity unavailable",
+    "content": "The activity could not load its content. Reload this page or open it in a new tab.",
+    "required": "Complete the required fields before continuing.",
+    "wordLimit": "The defense is limited to 150 words."
+  },
+  "privacy": "This receipt records that the simulation was completed on this device; it does not prove who completed it.",
+  "creditNotice": "Canvas handles participation credit. This app does not award or record credit.",
+  "finishInCanvas": {
+    "title": "Finish in Canvas",
+    "steps": [
+      "Copy the completion receipt below.",
+      "Return to Canvas and pass the Evidence Check.",
+      "Submit the Participation Attestation with the receipt and the line: \"I completed the PLNJ simulation myself.\""
+    ]
+  },
+  "checkpoints": {
+    "title1": "Round 1 · Apply what you learned",
+    "title2": "Round 2 · Apply what you learned",
+    "instructions": "Answer both questions to continue. Choose an answer and check it. Missed questions can be retried without limit; a different version appears after each miss.",
+    "passed": "Passed",
+    "check": "Check answer",
+    "continue": "Continue",
+    "retry": "Not yet. Review the hint and try this new version.",
+    "legacyRound1": "Your earlier choices are saved. Before resuming, complete the new Round 1 questions.",
+    "legacyRound2": "Your earlier choices are saved. Before resuming, complete the new Round 2 questions.",
+    "passedBoth": "You answered both questions correctly.",
+    "reviewRound2": "Review my Round 2 choices.",
+    "concepts": {
+      "financial": {
+        "title": "Stress-test profit and margin",
+        "hint": "Use the 70% variable-cost rate: a sales shortfall reduces operating profit by the remaining 30%. For the promotion-return scenario, compare the revised sales estimate with the original and recalculate profit and margin.",
+        "variants": [
+          {
+            "prompt": "Option 3 projects $11,410,000 in sales and $823,000 in operating profit. Sales come in $120,000 below forecast. Variable costs remain 70% of sales, other costs stay fixed, and Options 1 and 2 are unaffected. Does Option 3 still meet the 7% target and lead on operating profit?",
+            "options": [
+              {"id":"a","label":"It meets the 7% target and still leads on operating profit."},
+              {"id":"b","label":"It misses the 7% target and still leads on operating profit."},
+              {"id":"c","label":"It meets the 7% target but no longer leads on operating profit."},
+              {"id":"d","label":"It misses the 7% target and no longer leads on operating profit."}
+            ],
+            "answer": "b",
+            "explanation": "The $120,000 sales shortfall reduces operating profit by 30% × $120,000 = $36,000. Option 3 becomes $787,000 profit on $11,290,000 sales: 6.97%, below 7%. Its $787,000 profit still exceeds Option 2's $763,000 and Option 1's $697,050."
+          },
+          {
+            "prompt": "Option 3 projects $11,410,000 in sales and $823,000 in operating profit. Sales come in $70,000 below forecast. Variable costs remain 70% of sales, other costs stay fixed, and Options 1 and 2 are unaffected. Does Option 3 still meet the 7% target and lead on operating profit?",
+            "options": [
+              {"id":"a","label":"It meets the 7% target and still leads on operating profit."},
+              {"id":"b","label":"It misses the 7% target and still leads on operating profit."},
+              {"id":"c","label":"It meets the 7% target but no longer leads on operating profit."},
+              {"id":"d","label":"It misses the 7% target and no longer leads on operating profit."}
+            ],
+            "answer": "a",
+            "explanation": "The $70,000 sales shortfall reduces operating profit by 30% × $70,000 = $21,000. Option 3 becomes $802,000 profit on $11,340,000 sales: 7.07%, above 7%. Its profit remains higher than Options 1 and 2."
+          },
+          {
+            "prompt": "Option 2 projects $11,210,000 in sales and $763,000 in operating profit using an estimated $3.65 in sales per added promotion dollar. In this scenario, each added dollar returns $3.00 instead. With the 70% variable-cost rate and other assumptions unchanged, what does Option 2 project?",
+            "options": [
+              {"id":"a","label":"$11.08M sales; $763K profit; 6.89% margin."},
+              {"id":"b","label":"$11.21M sales; $763K profit; 6.81% margin."},
+              {"id":"c","label":"$11.08M sales; $724K profit; 6.53% margin."},
+              {"id":"d","label":"$11.21M sales; $724K profit; 6.46% margin."}
+            ],
+            "answer": "c",
+            "explanation": "At $3.00 per added dollar, incremental sales are $200,000 × $3.00 = $600,000, which is $130,000 below the $730,000 projection. Profit falls by 30% × $130,000 = $39,000 to $724,000. Sales are $11,080,000, so margin is $724,000 ÷ $11,080,000 = 6.53%."
+          },
+          {
+            "prompt": "Option 1 projects $9,623,500 in sales and $697,050 in operating profit. Sales come in $80,000 below forecast. Variable costs remain 70% of sales, other costs stay fixed, and the other options are unaffected. Does Option 1 still meet the 7% target and lead on operating profit?",
+            "options": [
+              {"id":"a","label":"It meets the 7% target and still leads on operating profit."},
+              {"id":"b","label":"It misses the 7% target but still leads on operating profit."},
+              {"id":"c","label":"It misses the 7% target and does not lead on operating profit."},
+              {"id":"d","label":"It meets the 7% target but does not lead on operating profit."}
+            ],
+            "answer": "d",
+            "explanation": "The $80,000 sales shortfall reduces operating profit by $24,000. Option 1 becomes $673,050 profit on $9,543,500 sales: about 7.05%, above 7%. Options 2 and 3 remain higher on operating profit."
+          }
+        ]
+      },
+      "romi": {
+        "title": "Contribution return on promotion",
+        "hint": "Revisit the ledger formula: multiply incremental revenue by 30%, subtract promotion spend, then divide by spend.",
+        "variants": [
+          {
+            "prompt": "A promotion costs $100 and produces $365 in incremental revenue. At a 30% gross margin, what is contribution ROMI?",
+            "options": [
+              {
+                "id": "a",
+                "label": "The contribution ROMI is 9.5%."
+              },
+              {
+                "id": "b",
+                "label": "The contribution ROMI is 30.0%."
+              },
+              {
+                "id": "c",
+                "label": "The contribution ROMI is 39.5%."
+              },
+              {
+                "id": "d",
+                "label": "The contribution ROMI is 365.0%."
+              }
+            ],
+            "answer": "a",
+            "explanation": "Contribution ROMI = (($365 × 30%) − $100) ÷ $100 = 9.5%."
+          },
+          {
+            "prompt": "A promotion costs $100 and produces $465 in incremental revenue. At a 30% gross margin, what is contribution ROMI?",
+            "options": [
+              {
+                "id": "a",
+                "label": "The contribution ROMI is 9.5%."
+              },
+              {
+                "id": "b",
+                "label": "The contribution ROMI is 30.0%."
+              },
+              {
+                "id": "c",
+                "label": "The contribution ROMI is 39.5%."
+              },
+              {
+                "id": "d",
+                "label": "The contribution ROMI is 465.0%."
+              }
+            ],
+            "answer": "c",
+            "explanation": "Contribution ROMI = (($465 × 30%) − $100) ÷ $100 = 39.5%."
+          },
+          {
+            "prompt": "A promotion costs $200 and produces $1,000 in incremental revenue. At a 30% gross margin, what is contribution ROMI?",
+            "options": [
+              {
+                "id": "a",
+                "label": "The contribution ROMI is 20%."
+              },
+              {
+                "id": "b",
+                "label": "The contribution ROMI is 30%."
+              },
+              {
+                "id": "c",
+                "label": "The contribution ROMI is 40%."
+              },
+              {
+                "id": "d",
+                "label": "The contribution ROMI is 50%."
+              }
+            ],
+            "answer": "d",
+            "explanation": "Contribution ROMI = (($1,000 × 30%) − $200) ÷ $200 = 50%."
+          },
+          {
+            "prompt": "A promotion costs $200 and produces $800 in incremental revenue. At a 30% gross margin, what is contribution ROMI?",
+            "options": [
+              {
+                "id": "a",
+                "label": "The contribution ROMI is 10%."
+              },
+              {
+                "id": "b",
+                "label": "The contribution ROMI is 20%."
+              },
+              {
+                "id": "c",
+                "label": "The contribution ROMI is 30%."
+              },
+              {
+                "id": "d",
+                "label": "The contribution ROMI is 40%."
+              }
+            ],
+            "answer": "b",
+            "explanation": "Contribution ROMI = (($800 × 30%) − $200) ÷ $200 = 20%."
+          }
+        ]
+      },
+      "flow": {
+        "title": "Orders, deliveries, and shopper purchases",
+        "hint": "Orders are not deliveries, and deliveries are not shopper purchases. With no returns or adjustments, inventory changes by deliveries received minus cases sold.",
+        "variants": [
+          {
+            "prompt": "Simulation scenario: in the prior period a retailer sold 100 cases to shoppers. This period it orders 140, receives 120, and sells 100. With no returns or other adjustments, what changed?",
+            "options": [
+              {"id":"a","label":"Inventory rises by 20 cases, while shopper purchases stay flat."},
+              {"id":"b","label":"Inventory rises by 40 cases, while shopper purchases stay flat."},
+              {"id":"c","label":"Inventory falls by 20 cases, while shopper purchases rise."},
+              {"id":"d","label":"Inventory stays flat, while shopper purchases rise by 20 cases."}
+            ],
+            "answer": "a",
+            "explanation": "Deliveries exceed shopper purchases by 20 cases, so inventory rises by 20. Shoppers bought 100 cases in both periods."
+          },
+          {
+            "prompt": "Simulation scenario: shoppers bought 90 cases last period. This period a retailer orders 155, receives 130, and sells 90. With no returns or other adjustments, what changed?",
+            "options": [
+              {"id":"a","label":"Inventory rises by 25 cases, while shopper purchases stay flat."},
+              {"id":"b","label":"Inventory falls by 40 cases, while shopper purchases rise."},
+              {"id":"c","label":"Inventory stays flat, while shopper purchases fall by 25 cases."},
+              {"id":"d","label":"Inventory rises by 40 cases, while shopper purchases stay flat."}
+            ],
+            "answer": "d",
+            "explanation": "Deliveries exceed shopper purchases by 40 cases, so inventory rises by 40. Shoppers bought 90 cases in both periods."
+          },
+          {
+            "prompt": "Simulation scenario: shoppers bought 110 cases last period. This period a retailer orders 150, receives 140, and sells 125. With no returns or other adjustments, what changed?",
+            "options": [
+              {"id":"a","label":"Inventory stays flat, while shopper purchases fall by 15."},
+              {"id":"b","label":"Inventory rises by 25 cases, while shopper purchases rise by 15."},
+              {"id":"c","label":"Inventory rises by 15 cases, while shopper purchases rise by 15."},
+              {"id":"d","label":"Inventory falls by 15 cases, while shopper purchases stay flat."}
+            ],
+            "answer": "c",
+            "explanation": "Deliveries exceed shopper purchases by 15 cases, so inventory rises by 15. Shopper purchases rose from 110 to 125."
+          },
+          {
+            "prompt": "Simulation scenario: shoppers bought 120 cases last period. This period a retailer orders 160, receives 145, and sells 115. With no returns or other adjustments, what changed?",
+            "options": [
+              {"id":"a","label":"Inventory rises by 45 cases, while shopper purchases fall by 5."},
+              {"id":"b","label":"Inventory rises by 30 cases, while shopper purchases fall by 5."},
+              {"id":"c","label":"Inventory falls by 30 cases, while shopper purchases rise by 5."},
+              {"id":"d","label":"Inventory stays flat, while shopper purchases stay flat."}
+            ],
+            "answer": "b",
+            "explanation": "Deliveries exceed shopper purchases by 30 cases, so inventory rises by 30. Shopper purchases fell from 120 to 115."
+          }
+        ]
+      },
+      "coordination": {
+        "title": "Retail readiness and promotion timing",
+        "hint": "A promotion works at the store only when the offer, display, and available stock are ready together. Revisit the launch timing and store-readiness evidence.",
+        "variants": [
+          {
+            "prompt": "Simulation scenario: consumer offers and trade displays are scheduled to start together, but stores receive displays after the offer begins. What should the team do first?",
+            "options": [
+              {"id":"a","label":"Keep the offer date and add displays as soon as stores receive them."},
+              {"id":"b","label":"Extend the offer at every store, even where displays are delayed."},
+              {"id":"c","label":"Confirm displays are in place before launching the offer at those stores."},
+              {"id":"d","label":"Move all stores to one launch date, then check display readiness."}
+            ],
+            "answer": "c",
+            "explanation": "The store launch should wait until the displays are present, with stock available for shoppers."
+          },
+          {
+            "prompt": "Simulation scenario: L&N can move offer dates. How can the team give shoppers the best chance to see the offer and display together?",
+            "options": [
+              {"id":"a","label":"Keep consumer and trade dates separate so stores can prepare each activation."},
+              {"id":"b","label":"Coordinate offer and display dates at each store before launch."},
+              {"id":"c","label":"Set one shared launch date before confirming each store's readiness."},
+              {"id":"d","label":"Move the displays after the consumer offer has already begun."}
+            ],
+            "answer": "b",
+            "explanation": "Coordinating the offer and display dates before launch gives each store a chance to have both ready when shoppers see the offer."
+          },
+          {
+            "prompt": "Simulation scenario: consumer and trade promotions will start together in six months. What action best coordinates the launch at participating stores?",
+            "options": [
+              {"id":"a","label":"Use one national offer date and let stores adjust displays afterward."},
+              {"id":"b","label":"Move the consumer offer ahead of the trade display to build awareness."},
+              {"id":"c","label":"Ask stores to move displays after the consumer offer has begun."},
+              {"id":"d","label":"Confirm each store's displays and stock before its offer launches."}
+            ],
+            "answer": "d",
+            "explanation": "Confirm readiness at each participating store before the coordinated offer begins."
+          },
+          {
+            "prompt": "Simulation scenario: shoppers respond to an offer, but several stores report empty shelves. What should the team do before the next offer at those stores?",
+            "options": [
+              {"id":"a","label":"Confirm replenishment and displays are ready before the offer launches."},
+              {"id":"b","label":"Shift the next offer to another week before checking replenishment."},
+              {"id":"c","label":"Keep the next offer date and ask stores to monitor shelf availability."},
+              {"id":"d","label":"Use one offer date across stores and review stock after launch."}
+            ],
+            "answer": "a",
+            "explanation": "Replenishment and displays should be ready before the next offer at the affected stores."
+          }
+        ]
+      }
+    },
+    "round1": [
+      "financial",
+      "romi"
+    ],
+    "round2": [
+      "flow",
+      "coordination"
+    ]
+  },
+  "historyLabels": {
+    "R1.1":"Round 1 lens",
+    "R1.2":"Initial recommendation",
+    "R1.3":"Recommendation rationale",
+    "R1.4":"Assumption to check",
+    "R1.5":"Stress-test recommendation",
+    "R1.5b":"Reason for changing",
+    "R2.1":"Investigation priority",
+    "R2.2":"Team priorities",
+    "R2.3":"Promotion calendar",
+    "R2.4":"Promotion message",
+    "R2.5":"Evidence to monitor",
+    "R2.6":"Response to field update",
+    "R3.1":"Response considered",
+    "R3.2":"Action authorized",
+    "R3.3":"Final defense",
+    "LOCK-R1":"Round 1 confirmed",
+    "LOCK-R2":"Round 2 confirmed"
+  },
+  "copy": {
+    "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "notSelected": "not selected",
+    "priorityReminder": "Your decision lens: {v1}.",
+    "locked": "locked",
+    "inProgress": "in progress",
+    "complete": "complete",
+    "changed": "changed",
+    "current": " (current)",
+    "calendar": "calendar",
+    "message": "message",
+    "priorities": "priorities",
+    "theCalendar": "the calendar",
+    "theMessage": "the message",
+    "thePriorities": "the priorities",
+    "structuredPreMortemLower": "structured pre-mortem",
+    "nothing": "nothing",
+    "holdCourse": "hold course",
+    "act": "act",
+    "completePreMortem": "complete a structured pre-mortem",
+    "thePreMortem": "the structured pre-mortem",
+    "holdCourseAndWatch": "hold course and watch it",
+    "actNowLower": "act now",
+    "aPriority": "a priority",
+    "active": "active",
+    "twoThirdsOneThird": "two-thirds/one-third",
+    "sixtyForty": "60/40",
+    "nothingPreMortem": "nothing (the structured pre-mortem)",
+    "recordTitle": "PLNJ SIMULATION PERSONAL RECORD",
+    "recordNote": "This file is for the student's own records and is not part of the Canvas submission.",
+    "recordHistory": "Decision history:",
+    "recordDefense": "Final defense:",
+    "startOverError": "Type exactly \"start over\" to clear this activity.",
+    "keepRecommendation": "Keep my recommendation",
+    "yourInitialRecommendation": "What would you recommend?",
+    "yourMainRationale": "What's the main reason for your recommendation?",
+    "theAssumptionYouRelyOn": "Which assumption are you relying on most?",
+    "stressTestAndRecommendation": "Stress-test your recommendation",
+    "whyYouAreSwitching": "Why you are switching",
+    "lockRound1": "Review your recommendation",
+    "readTheRound2Evidence": "What would you investigate first?",
+    "setYourFirst90DayPriorities": "Choose the two priorities your team will focus on",
+    "chooseThePromotionCalendar": "Choose a promotion calendar",
+    "chooseThePromotionMessage": "Choose a message strategy",
+    "chooseTheEvidenceToMonitor": "Choose the evidence you will monitor",
+    "respondToTheFollowUp": "Respond to the field update",
+    "lockRound2": "Review your Round 2 plan",
+    "aNewDevelopment": "A new development",
+    "authorizeOneAction": "What will you do for the rest of the year?",
+    "defendYourFinalDecision": "Explain your final decision",
+    "debriefAndCompletionReceipt": "You finished the simulation",
+    "introduction": "Introduction",
+    "evidenceCheckpoint": "Apply what you learned",
+    "result": "Result",
+    "whatThisChoiceAssumes": "What this choice assumes",
+    "whatItPutsAtRisk": "What it puts at risk",
+    "whatToWatch": "What to watch",
+    "originalProjectionFullYearAssumptionsUnchangedNotReForecast": "Original projection (full-year, assumptions unchanged; not re-forecast)",
+    "measure": "Measure",
+    "caseFacts": "Case facts",
+    "calculations": "Calculations",
+    "modelingAssumptions": "Modeling assumptions",
+    "round2Response": "Round 2 response",
+    "structuredPreMortem": "Structured pre-mortem",
+    "retainNoChange": "Retain (no change)",
+    "lensRecorded": "Lens recorded",
+    "initialRecommendation": "Initial recommendation",
+    "yourRationale": "Your rationale",
+    "recommendationConfirmed": "Recommendation confirmed",
+    "diagnosis": "Diagnosis",
+    "prioritiesRecorded": "Priorities recorded",
+    "calendarChoice": "Calendar choice",
+    "messageChoice": "Message choice",
+    "evidenceChoice": "Evidence choice",
+    "consideredNotAuthorized": "Considered, not authorized",
+    "authorizedAction": "Authorized action",
+    "submissionRecorded": "Submission recorded",
+    "yourFinalDefenseIsSavedOnThisDevice": "Your final defense is saved on this device.",
+    "openInANewTab": "Open in a new tab",
+    "promotingLandNatureJerky": "Promoting Land & Nature Jerky",
+    "thePublicAppUrlCanBeOpenedOutsideCanvasTheReadingGateControlsAccessToTheGra": "The public app URL can be opened outside Canvas. The reading gate controls access to the graded Canvas item, not access to this app.",
+    "afterTheStressTestWhatDoYouRecommend": "After reviewing the evidence, what do you recommend?",
+    "whatChangedYourMind": "What changed your mind?",
+    "rationaleReminder": "Your recommendation is {recommendation}. Your main reason is: {reason}.",
+    "viewProjections": "See spending, calculations, and assumptions",
+    "summaryProjectionCaption": "Projected full-year results",
+    "fullProjectionDetails": "Spending, calculations, and assumptions",
+    "step": "Step",
+    "dynamicStepOf": "Step {v1} of {v2}",
+    "continueToEvidenceCheck": "Answer the Round 1 questions",
+    "financialCalculationReveal": "Calculation: {v1}",
+    "continueToStressTest": "Continue to the stress test",
+    "passedBothChecks": "You answered both questions correctly.",
+    "switchReasonSection": "If you change your recommendation",
+    "recommendationReview": "Review your recommendation",
+    "dynamicEvidenceWanted": "Evidence I would want: {v1}",
+    "round2PlanConfirmed": "Confirmed: priorities {P}; {cal} calendar; {msg} message; monitoring {ev}.",
+    "dynamicActRecordWithSwap": "Act now; {dropped} was set aside.",
+    "evidenceNeeded": "What evidence would you want before committing?",
+    "evidenceAnswerRequired": "Name one piece of evidence before continuing.",
+    "selectedPriorityCount": "{v1} of 2 priorities selected.",
+    "diagnosisReminder": "You wanted to investigate: {v1}.",
+    "notStarted": "Not started",
+    "currentAnswer": "Current answer",
+    "earlierAnswer": "Earlier answer",
+    "summaryRecommendation": "Starting recommendation: {v1}",
+    "summaryRevisedRecommendation": "Revised recommendation: {v1}",
+    "summaryPriority": "Priority: {v1}",
+    "summaryLens": "Decision lens: {v1}.",
+    "summaryReason": "Main reason: {v1}",
+    "summaryAssumption": "Assumption to check: {v1}.",
+    "summaryEvidence": "Evidence to look for: {v1}",
+    "removedPromotionAssumption": "Whether removing promotion dollars will reduce sales at the historical rate.",
+    "addedPromotionAssumption": "Whether added promotion dollars will produce sales at the historical average.",
+    "stressTestContext": "Your recommendation: {recommendation} Your chosen assumption: {assumption}.",
+    "whatChanges": "What changes",
+    "round2ReviewTitle": "Your Round 2 plan",
+    "round2Swap": "Priority swap: {v1} was set aside; {v2} was added.",
+    "selectionCount": "Selected: {v1} of 2",
+    "reviewRound1": "Confirm my Round 1 recommendation",
+    "reviewRound2": "Confirm my Round 2 plan",
+    "calendarReminder": "Calendar selected: {v1}.",
+    "messageReminder": "Message selected: {v1}.",
+    "evidenceReminder": "Keep these measures distinct: orders show retailer purchases; depletions and scans show shopper purchases; awareness and engagement show whether people notice the brand; realized prices show what shoppers paid.",
+    "priceContext": "Case context: 2019 jerky averaged $4.99 at retail against a $5.49 list price.",
+    "messageEffects": {
+      "PREM": {
+        "discipline": "With your {priorities} priorities and {calendar} calendar, the premium message avoids price cuts; value-added offers still need store readiness.",
+        "noDiscipline": "With your {priorities} priorities and {calendar} calendar, the premium message avoids price cuts; value-added offers still need store readiness."
+      },
+      "DEAL": {
+        "discipline": "Your Discount discipline priority can limit the price-led offers, but the main message still leads with a deal during the {calendar} calendar.",
+        "noDiscipline": "Your selected priorities do not include Discount discipline, so the price-led offers have no team priority limiting their depth or frequency during the {calendar} calendar."
+      },
+      "MIX": {
+        "discipline": "Your Discount discipline priority supports limiting price offers to trial and digital cohorts during the {calendar} calendar.",
+        "noDiscipline": "Without Discount discipline among your priorities, the mixed message relies on trial and digital cohorts staying separate during the {calendar} calendar."
+      }
+    },
+    "waitOneCycle": "Wait one more cycle",
+    "waitConsequence": "If you wait: {v1}",
+    "actConsequence": "If you act: {v1}",
+    "authorizationUnavailable": "The response you considered is not a separate action. Choose a related plan change if one fits, or retain your current plan; some responses are not directly available here.",
+    "sameAsCurrent": "That is already your current plan. Choose Keep the current plan or select a different change.",
+    "missingRefinement": "Choose a specific change before continuing.",
+    "returnToStep2": "Back to Step 2",
+    "missingRefinementRecovery": "This saved action is missing a valid detail. Return to Step 2 to repair it. Your evidence selections and written draft are preserved.",
+    "authorizedActionRequired": "Choose one specific authorized action.",
+    "authorizedCalendar": "You authorized this calendar for the remaining months: {value}.",
+    "authorizedMessage": "You authorized this message for the remaining period: {value}.",
+    "authorizedPriorities": "You authorized these two priorities for the remaining period: {value}.",
+    "noPriorityWasPutOnHold": "No priority was put on hold.",
+    "yourFinalDecision": "Your final decision",
+    "finalRecommendation": "Recommendation: {recommendation}",
+    "finalRecommendationChanged": "Initial recommendation: {initial} Final recommendation: {final}",
+    "finalPlanSummary": "Your final plan keeps these priorities: {P}; {cal} calendar; {msg} message.",
+    "finalDefense": "Your written defense",
+    "defenseSubmitted": "Defense submitted",
+    "choiceRecorded": "Choice recorded",
+    "actNowRecord": "Act now",
+    "none": "none",
+    "finished": "You finished the simulation.",
+    "copyReceiptManual": "If copying does not work, select the receipt text and copy it manually.",
+    "debriefTitle": "Your path, in brief",
+    "planChanged": "Your plan changed: {v1}",
+    "planUnchanged": "Your plan did not change. Only the action you authorized took effect.",
+    "downloadMyDecisionRecord": "Download my decision record",
+    "reviewMyChoices": "Review my choices",
+    "takeaway": "Takeaway",
+    "continueToRound2": "Continue to Round 2",
+    "selectExactlyTwoPriorities": "Select exactly two priorities.",
+    "consumerPromotion": "Consumer promotion",
+    "tradePromotion": "Trade promotion",
+    "mediaBurst": "Media burst",
+    "pattern": "Pattern",
+    "textEquivalentForThe12MonthGrid": "Text equivalent for the 12-month grid",
+    "perMonthPromotionSpendAnnualEquivalentIllustration": "Per-month promotion spend — annual-equivalent illustration",
+    "track": "Track",
+    "consumerPerActiveMonth": "Consumer per active month",
+    "tradePerActiveMonth": "Trade per active month",
+    "combinedPerLiveMonth": "Combined per live month",
+    "mediaAllocationAnnualEquivalentIllustration": "Media allocation — annual-equivalent illustration",
+    "allocation": "Allocation",
+    "anchorMonthsEven": "Anchor months (even)",
+    "quietMonthsOdd": "Quiet months (odd)",
+    "perAnchorMonth": "Per anchor month",
+    "perQuietMonth": "Per quiet month",
+    "flat": "Flat",
+    "thisAnnualEquivalentIllustrationAssumesThePatternRanAllYearAfterYouChooseTh": "This annual-equivalent illustration assumes the pattern ran all year. After you choose, the allocation applies only to media not yet committed; this screen does not track dollars already spent.",
+    "eachPromotionFreeMonthGetsTwoThirdsOfALaunchMonthSMedia": "Each promotion-free month gets two-thirds of a launch month's media.",
+    "eachPromotionFreeMonthGetsHalfTheMediaOfALaunchMonth": "Each promotion-free month gets half the media of a launch month.",
+    "quietMediaTwoThirds": "Quiet-month media is two-thirds of launch-month media for the selected priorities.",
+    "quietMediaHalf": "Quiet-month media is half of launch-month media for the selected priorities.",
+    "quietMediaEqual": "Media is flat: quiet months and launch months receive the same amount.",
+    "viewMediaSpending": "View media spending",
+    "flatMonthlyMedia": "Media per month",
+    "annualEquivalentMedia": "Annual-equivalent total",
+    "alignIsATimingAndMediaChangeItDoesNotConcentrateSpendingPerPromotionTypeOve": "ALIGN is a timing and media change. It does not concentrate spending per promotion type. OVERLAP spreads each promotion type across 12 months at half the per-month intensity.",
+    "calendarPatternAndAnnualEquivalentIllustrations": "Calendar pattern and annual-equivalent illustrations",
+    "whichLinkDoYouThinkIsMostLikelyToHaveBroken": "Which link do you think is most likely to have broken?",
+    "confirmChange": "Confirm change",
+    "round2IsAboutToLock": "You can go back now to review your Round 2 answers. Confirming locks them and starts Round 3.",
+    "round2Commitments": "Your Round 2 plan",
+    "responseSummary": "Your response to {flag}: {response}",
+    "alsoOpenNotAddressed": "Also open (not addressed)",
+    "continueToRound3": "Confirm and start Round 3",
+    "chooseTheCalendarForTheRemainingMonths": "Choose the calendar for the remaining months.",
+    "chooseTheMessagePostureForTheRemainingPeriod": "Choose the message posture for the remaining period.",
+    "chooseExactlyTwoPrioritiesForTheRemainingPeriod": "Choose exactly two priorities for the remaining period.",
+    "commitmentsToDate": "Commitments to date",
+    "beforeYouAuthorize": "Before you authorize one action",
+    "currentPlanReminder": "Your current plan: {rec}; priorities {P}; {cal} calendar; {msg} message; monitoring {ev}.",
+    "consideredReminder": "Response considered (not authorized): {response}.",
+    "authorizationGuidance": {
+      "R3.1-C3-AWARE-a": "This idea maps to a calendar refinement. You can authorize one calendar change for the remaining months; the app does not set a separate media schedule.",
+      "R3.1-C3-AWARE-c": "This response maps to retaining your current plan. It remains a consideration until you authorize Retain.",
+      "R3.1-C3-FLOW-b": "You can refine the two priorities to include Retail execution, but you cannot change retailer incentive terms in this simulation.",
+      "R3.1-C3-EXEC-b": "You can refine the two priorities to include Retail execution, but you cannot change retailer incentive terms in this simulation.",
+      "R3.1-C3-TIME-c": "You can retain the current plan or authorize a different calendar for the remaining months; the considered response itself does not change it.",
+      "R3.1-C3-BRAND-b": "You can authorize a mixed message or change the two priorities to include Discount discipline. Choose one action; changing one does not automatically change the other.",
+      "R3.1-C3-HOLD-b": "This response maps to retaining your current plan. It remains a consideration until you authorize Retain."
+    },
+    "confirmRevision": "Confirm revision",
+    "authorizeThisAction": "Authorize this action",
+    "holdCourseAndWatchIt": "Wait one more cycle.",
+    "actNow": "Act now.",
+    "structuredPreMortemSentence": "Structured pre-mortem.",
+    "chooseACaseFactOrCalculation": "Choose a case fact or calculation",
+    "chooseADevelopmentFromYourPath": "Choose what happened in your simulation",
+    "noMinimumWordCountANonWhitespaceCharacterIsRequiredTheMaximumIs150Whitespac": "No minimum word count. A non-whitespace character is required; the maximum is 150 whitespace-separated words.",
+    "textPast150WordsIsRemovedYourEarlierWritingStaysOnThisDevice": "Text past 150 words is removed. Your earlier writing stays on this device.",
+    "confirmAndFinish": "Confirm and finish",
+    "yourDecisionPath": "Review my choices",
+    "recordedChoicesAndChanges": "Recorded choices and changes",
+    "choice": "Choice",
+    "status": "Status",
+    "whatYourPathShowed": "What your path showed",
+    "consideredVersusAuthorized": "Considered versus authorized",
+    "closingIdeas": "Takeaway",
+    "completionReceiptText": "Completion receipt text",
+    "confirmCopy": "Copy receipt",
+    "confirmation": "Confirmation",
+    "confirmStartOver": "Confirm start over",
+    "savedProgressIsIncompatibleOrIncompleteNoPartOfItWasRestored": "Saved progress is incompatible or incomplete. No part of it was restored.",
+    "dynamicDecisionOf": "{v1} · Step {v2} of {v3}",
+    "dynamicProtects": "Protects: {v1}",
+    "dynamicCosts": "Costs: {v1}",
+    "dynamicAssumes": "Assumes: {v1}",
+    "dynamicRisks": "Risks: {v1}",
+    "dynamicWatch": "Watch: {v1}",
+    "dynamicRefineOneLever": "Refine one lever: {v1}",
+    "dynamicRedirectTheRemainingBudgetTo": "Redirect the remaining budget to {v1}",
+    "dynamicLensRecordedDollarsAndMarginStayVisible": "Lens recorded: {v1}. Dollars and margin stay visible.",
+    "dynamicInitialRecommendationRecorded": "Initial recommendation recorded: {v1}.",
+    "dynamicRecommendationConfirmedYourFirstRecommendationWas": "Recommendation confirmed: {v1}. Your first recommendation was {v2}.",
+    "dynamicYourPrioritiesNotFundedThisPeriod": "Your priorities: {v1}. Not funded this period: {v2}.",
+    "dynamicConsideredNotYetAuthorized": "Considered: {v1}. Not yet authorized.",
+    "dynamicRound1": "Round 1: {v1}.",
+    "dynamicRound2": "Round 2: {v1}.",
+    "dynamicRound3": "Round 3: {v1}.",
+    "dynamicLens": "Lens: {v1}.",
+    "dynamicInitialRecommendation": "Initial recommendation: {v1}.",
+    "dynamicConfirmedRecommendation": "Confirmed recommendation: {v1}.",
+    "dynamicAttestationLine": "Attestation line: {v1}",
+    "dynamicKeepMyRecommendation": "Keep my recommendation: {v1}",
+    "dynamicSwitchTo": "Switch to: {v1}",
+    "dynamicRound2Event": "Round 2 field update: {v1}",
+    "dynamic12MonthCalendar": "12-month {v1} calendar",
+    "dynamicConsumerAndTradePromotionsWithAMediaBurst": "{v1}: consumer and trade promotions with a media burst",
+    "dynamicPromotionFreeQuieterMedia": "{v1}: promotion-free, quieter media",
+    "dynamicConsumerAndTradePromotions": "{v1}: consumer and trade promotions",
+    "dynamicActiveMonthsConsumerTradeMonthsWithBothPromotions": "Active months: consumer {v1}; trade {v2}; months with both promotions {v3}.",
+    "dynamicAlsoOpen": "Also open: {v1}.",
+    "dynamicPriorities": "Priorities: {v1}.",
+    "dynamicCalendar": "Calendar: {v1}.",
+    "dynamicMessage": "Message: {v1}.",
+    "dynamicEvidence": "Evidence: {v1}.",
+    "dynamicResponseToTheFlag": "Response to the flag: {v1}; {v2}.",
+    "dynamicAlsoStillOpen": "Also still open: {v1}.",
+    "dynamicRound2FollowUp": "Round 2 follow-up: {v1}",
+    "dynamicYourRound2Response": "Your Round 2 response: {v1}",
+    "dynamicRound3Complication": "Round 3 complication: {v1}",
+    "dynamicFinalAuthorizedPlan": "Final authorized plan: {v1}.",
+    "dynamicYourFinalDefense": "Your final defense: {v1}",
+    "dynamicInRound2YourTeamFlaggedYouChoseTo": "In Round 2 your team flagged: {v1}. You chose to {v2}.",
+    "dynamicInRound3YouMet": "In Round 3 you met: {v1}.",
+    "dynamicAlsoOpenAtTheEnd": "Also open at the end: {v1}.",
+    "dynamicInRound3YouConsidered": "In Round 3 you considered: {v1}.",
+    "dynamicYouAuthorized": "You authorized: {v1}.",
+    "dynamicVersion": "Version: {v1}",
+    "dynamicCompletedAt": "Completed at: {v1}"
+  }
+}

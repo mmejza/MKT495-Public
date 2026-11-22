@@ -1,0 +1,116 @@
+{
+  "contentVersion": "1.0.0",
+  "schema": 1,
+  "inputs": {
+    "revenue": 10480000,
+    "grossMargin": 0.3,
+    "baselineProfit": 544000,
+    "revenuePerPromotionDollar": {
+      "consumer": 3.65,
+      "trade": 4.65
+    },
+    "mediaOriginal": 700000,
+    "media": 500000,
+    "wages": 920000,
+    "generalAndAdministrative": 280000,
+    "variableCostRatio": 0.7,
+    "capacity": 0.8,
+    "marginTarget": 0.07,
+    "variableCostComponents":[5470560,817440,1048000],
+    "historicalPromotionData":{
+      "consumer":[
+        {"revenue":1340104,"spend":367152},
+        {"revenue":1406710,"spend":385400}
+      ],
+      "trade":[
+        {"revenue":1304265,"spend":280487},
+        {"revenue":1368495,"spend":294300}
+      ]
+    }
+  },
+  "tracks": {
+    "CUT": {
+      "recommendation": "O1",
+      "media": 500000,
+      "consumer": 280000,
+      "trade": 210000,
+      "totalMarketing": 990000,
+      "incrementalRevenue": -856500,
+      "projectedRevenue": 9623500,
+      "projectedProfit": 697050,
+      "margin": 0.0724,
+      "profitAboveTarget": 23405,
+      "capacity": 0.735
+    },
+    "CONS": {
+      "recommendation": "O2",
+      "media": 500000,
+      "consumer": 600000,
+      "trade": 300000,
+      "totalMarketing": 1400000,
+      "incrementalRevenue": 730000,
+      "projectedRevenue": 11210000,
+      "projectedProfit": 763000,
+      "margin": 0.0681,
+      "profitAboveTarget": -21700,
+      "capacity": 0.856
+    },
+    "TRADE": {
+      "recommendation": "O3",
+      "media": 500000,
+      "consumer": 400000,
+      "trade": 500000,
+      "totalMarketing": 1400000,
+      "incrementalRevenue": 930000,
+      "projectedRevenue": 11410000,
+      "projectedProfit": 823000,
+      "margin": 0.0721,
+      "profitAboveTarget": 24300,
+      "capacity": 0.871
+    }
+  },
+  "baseline": {
+    "media": 700000,
+    "consumer": 400000,
+    "trade": 300000,
+    "totalMarketing": 1400000,
+    "projectedRevenue": 10480000,
+    "projectedProfit": 544000,
+    "margin": 0.0519,
+    "profitAboveTarget": -189600,
+    "capacity": 0.8
+  },
+  "recoveryOption2": {
+    "gapAtProjectedSales": 21700,
+    "referencePointA": 94348,
+    "referencePointB": 824348,
+    "incrementalRevenueModeled": 730000,
+    "industryConsumerRatio": 5,
+    "industryMargin": 0.0735
+  },
+  "sensitivities": {
+    "option1MediaLossToTarget": 101761,
+    "option3MediaLossToTarget": 105652,
+    "option1WithoutMediaSavingsProfit": 497050,
+    "option1WithoutMediaSavingsMargin": 0.0516,
+    "option2ContributionRomI": 0.095,
+    "option3ContributionRomI": 0.395
+  },
+  "lensReminders": {
+    "L-DOL": {
+      "O1": "Your lens was profit dollars. Option 1 projected $697,050, +$153,050 over baseline, the lowest of the three options in dollars (Option 2 $763,000; Option 3 $823,000).",
+      "O2": "Your lens was profit dollars. Option 2 projected $763,000, +$219,000 over baseline, between Option 1 ($697,050) and Option 3 ($823,000).",
+      "O3": "Your lens was profit dollars. Option 3 projected $823,000, +$279,000 over baseline, the highest of the three options."
+    },
+    "L-MGN": {
+      "O1": "Your lens was margin against the 7% target. Option 1 projected 7.24%, $23,405 above the 7% line. A media-related revenue loss of about $102,000 would bring it to 7%.",
+      "O2": "Your lens was margin against the 7% target. Option 2 projected 6.81%, $21,700 below the 7% line. Reaching 7% takes about $94,348 more revenue than projected, or $824,348 in total incremental revenue (4.12 per dollar, against a 3.65 history).",
+      "O3": "Your lens was margin against the 7% target. Option 3 projected 7.21%, $24,300 above the 7% line. A media-related revenue loss of about $106,000, or incremental revenue below $824,348 (4.12 per dollar, against a 4.65 history), would bring it to 7%."
+    },
+    "L-BAL": {
+      "O1": "Your lens was both. Option 1 projected $697,050 and 7.24%. Dollars rank the options 3 > 2 > 1; margin ranks them 1 > 3 > 2.",
+      "O2": "Your lens was both. Option 2 projected $763,000 and 6.81%. Dollars rank the options 3 > 2 > 1; margin ranks them 1 > 3 > 2.",
+      "O3": "Your lens was both. Option 3 projected $823,000 and 7.21%. Dollars rank the options 3 > 2 > 1; margin ranks them 1 > 3 > 2."
+    }
+  }
+}

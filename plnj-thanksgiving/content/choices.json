@@ -1,0 +1,169 @@
+{
+  "contentVersion": "1.0.0",
+  "schema": 1,
+  "labels": {
+    "A": "Awareness",
+    "B": "Retail execution",
+    "C": "Sell-through visibility",
+    "D": "Discount discipline",
+    "AWARE": "Awareness",
+    "EXEC": "Retail execution",
+    "FLOW": "Sell-through visibility",
+    "BRAND": "Discount discipline",
+    "TIME": "Promotion timing"
+  },
+  "nodes": {
+    "lens": {
+      "prompt": "What matters most in your recommendation? You can still weigh both profit dollars and operating margin; the figures remain visible.",
+      "choices": [
+        {"id":"L-DOL","label":"Profit dollars first. Maximize operating profit; margin matters if it falls far short."},
+        {"id":"L-MGN","label":"Margin versus the 7% target first. Get to or past the target; dollars matter if they fall far short."},
+        {"id":"L-BAL","label":"Both, weighed by risk. Prefer the option that holds up best if my assumptions are wrong."}
+      ],
+      "result":"Lens recorded: {label}. Dollars and margin stay visible."
+    },
+    "initialRec": {
+      "prompt":"What would you recommend?",
+      "choices":[
+        {"id":"O1","label":"Reduce consumer and trade promotions by 30%, and use the $200,000 media savings."},
+        {"id":"O2","label":"Add $200,000 to consumer promotions, using the media savings."},
+        {"id":"O3","label":"Add $200,000 to trade promotions, using the media savings."}
+      ]
+    },
+    "r13": {
+      "prompt":"What is the main reason for your recommendation?",
+      "choicesByRecommendation":{
+        "O1":[
+          {"id":"O1-R1","label":"The savings leave less of the recommendation dependent on new sales.","panel":{"assumes":"the media savings do not cause a large loss in sales."}},
+          {"id":"O1-R2","label":"The last promotion dollars may return less than the earlier ones.","panel":{"assumes":"the dollars removed are less productive than the historical average."}},
+          {"id":"O1-R3","label":"Fewer discounts may help protect a premium image.","panel":{"assumes":"frequent discounts shape how shoppers see the brand."}},
+          {"id":"O1-R4","label":"Make a smaller plan now and revisit it when media is easier to measure.","panel":{"assumes":"the team can restore support later without lasting effects."}}
+        ],
+        "O2":[
+          {"id":"O2-R1","label":"Consumer promotions can bring in new buyers and encourage trial.","panel":{"assumes":"the added offers reach buyers who would not otherwise purchase."}},
+          {"id":"O2-R2","label":"L&N's customers respond to contests and cause-based offers.","panel":{"assumes":"customer engagement leads to additional purchases."}},
+          {"id":"O2-R3","label":"Shopper demand will give retailers a reason to keep the product available.","panel":{"assumes":"enough shoppers see and respond to the offers."}},
+          {"id":"O2-R4","label":"The added revenue will support a larger business.","panel":{"assumes":"operating costs stay stable as sales grow."}}
+        ],
+        "O3":[
+          {"id":"O3-R1","label":"Trade promotions can support retailers and generate additional sales.","panel":{"assumes":"the added trade dollars perform close to the historical average."}},
+          {"id":"O3-R2","label":"Retailers control shelf space, and many value trade support.","panel":{"assumes":"retailers need this level of support to keep L&N on shelves."}},
+          {"id":"O3-R3","label":"Retailers will pass deal value along and shoppers will respond.","panel":{"assumes":"retailers use the deal to encourage shopper purchases."}},
+          {"id":"O3-R4","label":"The forecast shows growth while meeting the 7% target.","panel":{"assumes":"the projected sales and media savings are close to what will occur."}}
+        ]
+      }
+    },
+    "r14": {
+      "prompt":"Which assumption would you check first? Every option depends on all four.",
+      "choices":[
+        {"id":"A-MEDIA","label":"Whether lower media spending changes shopper demand."},
+        {"id":"A-AVG","label":"Whether promotion dollars added or removed perform like the historical average."},
+        {"id":"A-PASS","label":"Whether retailers follow through and shoppers can buy the product."},
+        {"id":"A-DEMAND","label":"Whether promotions create new purchases rather than shift their timing."}
+      ]
+    },
+    "switchReason": {
+      "prompt":"What changed your mind?",
+      "choices":[
+        {"id":"SW-1","label":"The stress test showed my main assumption is weaker than I thought."},
+        {"id":"SW-2","label":"Another option now looks better on my lens."},
+        {"id":"SW-3","label":"I am more concerned about risk than I was."},
+        {"id":"SW-4","label":"I prefer the option whose assumptions I can monitor most easily."}
+      ]
+    },
+    "r21": {
+      "prompt":"What would you investigate first?",
+      "choicesByTrack":{
+        "CUT":[
+          {"id":"R2.1-CUT-a","label":"Ask whether fewer facings are appearing across accounts or only in the buyer who changed them.","panel":{"assumes":"the affected buyer may signal a wider pattern.","risks":"the website dip and the chain with normal sales still need an explanation.","watch":"facings across more accounts."}},
+          {"id":"R2.1-CUT-b","label":"Check whether lower media spending is changing awareness and engagement.","panel":{"assumes":"the engagement dip reflects lower awareness.","risks":"why one buyer changed facings remains unclear.","watch":"awareness alongside retailer feedback."}},
+          {"id":"R2.1-CUT-c","label":"Investigate the specific buyer's reason for reducing L&N's facings.","panel":{"assumes":"the account's decision may have a local cause.","risks":"a single account may not reveal a broader pattern.","watch":"that account's support and shelf plans."}},
+          {"id":"R2.1-CUT-d","label":"Wait for another cycle before deciding whether the changes are a pattern.","panel":{"assumes":"another cycle will clarify the evidence.","risks":"accounts may reduce support while the team waits.","watch":"the next cycle and changes across accounts."}}
+        ],
+        "CONS":[
+          {"id":"R2.1-CONS-a","label":"Check whether shelf shortages are spreading across stores or limited to the two reporting chains.","panel":{"assumes":"the reported stores may signal a wider availability issue.","risks":"the \"always on sale\" comments remain unexplained.","watch":"stock and offer execution across more stores."}},
+          {"id":"R2.1-CONS-b","label":"Check whether the \"always on sale\" comments reflect a wider change in shopper expectations.","panel":{"assumes":"the comments represent more than a few shoppers.","risks":"whether promotions create new sales remains unknown.","watch":"price realization and repeat behavior."}},
+          {"id":"R2.1-CONS-c","label":"Ask the two chains why promoted items ran short and what caused each stockout.","panel":{"assumes":"those accounts may show how availability affects redemptions.","risks":"their experience may not represent other stores.","watch":"stock, delivery timing, and offer execution in those accounts."}},
+          {"id":"R2.1-CONS-d","label":"Check whether the redemption spike is spreading beyond existing L&N buyers.","panel":{"assumes":"new buyers are needed for sustained demand.","risks":"the shelf shortages could limit purchases regardless.","watch":"new versus repeat redeemers."}}
+        ],
+        "TRADE":[
+          {"id":"R2.1-TRADE-a","label":"Compare orders and depletions across more chains to see whether forward buying is widespread.","panel":{"assumes":"more chains will show whether this is a broader pattern.","risks":"retailer orders still do not equal shopper purchases.","watch":"orders against depletions by chain."}},
+          {"id":"R2.1-TRADE-b","label":"Check whether shoppers see the brand between the promotion windows.","panel":{"assumes":"weak shopper pull explains flat depletions.","risks":"why orders rise before deal windows remains unexplained.","watch":"awareness between windows."}},
+          {"id":"R2.1-TRADE-c","label":"Check launch-day shelf readiness and stock in the stores reporting flat sales.","panel":{"assumes":"store conditions explain the flat sales in those chains.","risks":"the order surge remains unexplained.","watch":"readiness and stock in those accounts."}},
+          {"id":"R2.1-TRADE-d","label":"Investigate the two reporting chains and why they order ahead of each deal window.","panel":{"assumes":"those accounts may explain the order and depletion gap.","risks":"their behavior may not represent other chains.","watch":"account-level order timing and depletions."}}
+        ]
+      }
+    },
+    "priorities": {
+      "prompt":"Your three-person team has 90 days. Choose exactly two priorities. Each protects a different part of the plan; the two not selected get no attention this period.",
+      "choices":[
+        {"id":"A","label":"Awareness. Keep paid and owned media present, including between promotions, and report awareness monthly.","protects":"Consumers knowing the brand","costs":"Team time away from stores and data; under an aligned calendar, a gentler media burst"},
+        {"id":"B","label":"Retail execution. Verify shelf talkers, displays, and stock; tie trade incentives to verified merchandising.","protects":"Offer and shelf in the same place","costs":"Field time; less attention to analytics"},
+        {"id":"C","label":"Sell-through visibility. Pull retailer depletion and scan data, along with KB Holdings reorder data, every month.","protects":"Seeing shopper purchases, not only retailer orders","costs":"Analysis time; needs retailer cooperation"},
+        {"id":"D","label":"Discount discipline. Cap the depth and frequency of price offers.","protects":"Premium positioning and margin per sale","costs":"Less short-term lift from offers"}
+      ]
+    },
+    "calendar": {
+      "prompt":"Choose when consumer and trade promotions run. Budgets do not change. Simulation scenario.",
+      "choices":[
+        {"id":"KEEP","label":"Keep the alternating schedule: consumer offers in even months; trade offers in odd months.","panel":{"assumes":"the current rhythm suits the brand.","risks":"offers and trade are never tied to media."}},
+        {"id":"ALIGN","label":"Run both promotions together in six anchor months, with a media burst; confirm stores are ready first.","panel":{"assumes":"retailers can be ready on launch day and accept re-timed deals.","risks":"promotion-free months have less media."}},
+        {"id":"OVERLAP","label":"Run both promotions every month at half the per-month intensity; keep media flat.","panel":{"assumes":"presence beats intensity.","risks":"promotion may become the baseline."}}
+      ]
+    },
+    "message": {
+      "prompt":"What should shoppers notice first? Choose the action your team can carry out for the remaining period.",
+      "choices":[
+        {"id":"PREM","label":"Lead with the premium brand. Use value-added offers such as contests, donations, or bundles; no price cuts.","panel":{"assumes":"L&N's buyers respond to more than price (16% price-sensitive vs. 39% for all meat snack buyers, Exh. 3).","risks":"slower trial among price-sensitive shoppers."}},
+        {"id":"DEAL","label":"Lead with a discount. Make coupons and buy-one-get-one offers the main message.","panel":{"assumes":"fast trial matters most.","risks":"a deal signal next to an artisanal, better-for-you brand; the case notes L&N sits at one of the highest price-per-ounce positions."}},
+        {"id":"MIX","label":"Offer discounts to selected shoppers. Use price offers only for trial and digital cohorts; keep the premium message elsewhere.","panel":{"assumes":"the two audiences stay separate.","risks":"leakage and extra complexity for a three-person team."}}
+      ]
+    },
+    "evidence": {
+      "prompt":"What will you watch after launch?",
+      "choices":[
+        {"id":"ORD","label":"Retailer orders through KB Holdings: what stores bought.","panel":{"assumes":"a weekly early signal is useful.","risks":"shows what retailers bought, not what shoppers bought."}},
+        {"id":"SELL","label":"Retailer depletions and scan data: what shoppers purchased.","panel":{"assumes":"the closest available measure of shopper purchases matters.","risks":"it is slower and partial; it needs retailers to share."}},
+        {"id":"AWR","label":"Awareness and engagement (aided awareness, web and social).","panel":{"assumes":"upstream demand can be monitored.","risks":"it is indirect, slow, and hard to tie to sales."}},
+        {"id":"REAL","label":"Price realization. Share of units sold on discount; average price versus list (case: jerky averaged $4.99 against a $5.49 list price in 2019).","panel":{"assumes":"price quality is a central signal.","risks":"it is silent on whether demand is growing."}}
+      ]
+    },
+    "response": {
+      "prompt":"Your team has flagged a field problem. What will you do?",
+      "choices":[
+        {"id":"WATCH","label":"Wait one more cycle."},
+        {"id":"ACT","label":"Act now."}
+      ]
+    },
+    "r31": {
+      "prompt":"Which response would you consider? Considering a response does not authorize it. At the next step you will authorize one action, and only that action takes effect."
+    },
+    "r32": {
+      "prompt":"What will you authorize for the rest of the year? Choose one action.",
+      "choices":[
+        {"id":"RETAIN","label":"Retain my current plan and recommendation.","changes":"Nothing. Your reasoning goes into the defense."},
+        {"id":"REFINE-CAL","label":"Refine the calendar.","changes":"Pick the calendar for the remaining months. Budget direction stays."},
+        {"id":"REFINE-MSG","label":"Refine the message.","changes":"Pick the message posture. Budget direction stays."},
+        {"id":"REFINE-PRI","label":"Refine the priorities.","changes":"Pick the two priorities. Budget direction stays."},
+        {"id":"REVISE-O1","label":"Redirect the remaining budget to Option 1.","changes":"Budget direction for the remaining period. Execution levers carry forward unchanged."},
+        {"id":"REVISE-O2","label":"Redirect the remaining budget to Option 2.","changes":"Budget direction for the remaining period. Execution levers carry forward unchanged."},
+        {"id":"REVISE-O3","label":"Redirect the remaining budget to Option 3.","changes":"Budget direction for the remaining period. Execution levers carry forward unchanged."}
+      ]
+    },
+    "defenseFacts": {
+      "choices":[
+        {"id":"F1","label":"Option margins: 7.24% / 6.81% / 7.21% against the 7% target."},
+        {"id":"F2","label":"Option profit: $697,050 / $763,000 / $823,000."},
+        {"id":"F3","label":"Media-loss break-even: $101,761 (Option 1) and $105,652 (Option 3)."},
+        {"id":"F4","label":"Revenue per promotion dollar: 3.65 consumer, 4.65 trade."},
+        {"id":"F5","label":"Contribution ROMI: +9.5% consumer, +39.5% trade."},
+        {"id":"F6","label":"Industry-typical ratios: 5:1 consumer, 4:1 trade."},
+        {"id":"F7","label":"Option 2 recovery condition: $21,700 gap; $94,348 and $824,348."},
+        {"id":"F8","label":"L&N cannot control how partners manage inventory (case)."},
+        {"id":"F9","label":"L&N estimates half its accounts would stop carrying products without trade promotions (case)."},
+        {"id":"F10","label":"L&N buyers are less price-sensitive than the average meat snack buyer: 16% vs. 39% (Exh. 3)."},
+        {"id":"F11","label":"2019 jerky averaged $4.99 at retail against a $5.49 list price (case)."}
+      ]
+    }
+  }
+}
